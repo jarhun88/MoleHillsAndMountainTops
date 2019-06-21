@@ -1,14 +1,9 @@
 <template>
-  <div class="hello">
-    <h1>Welcome to main page</h1>
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        With Bootstrap!
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      
-  </div>
+    <div class="container-fluid">
+        <div class="page-header">
+                <div class="background"></div>      
+        </div> 
+    </div>
 </template>
 
 <script>
@@ -22,4 +17,21 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.container-fluid {
+    padding: 0;
+}
+
+.page-header {
+    height: 90vh;
+    min-height: 250px;
+    /* max-height: 350px; */
+}
+
+.background {
+    background-image: url("pic.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 </style>
