@@ -62,6 +62,29 @@
             <div class="sub-title">
                 <h3>Latest Destinations</h3>
             </div>
+            <div class="images">
+                <div class="image-box">
+                    <img class="image" src="../taiwan.jpg" />
+                </div>
+                <div class="image-box">
+                    <img class="image" src="../singapore.jpg" />
+                </div>
+                <div class="image-box">
+                    <img class="image" src="../thailand.jpeg" />
+                </div>
+                <div class="image-box">
+                        <img class="image" src="../japan.jpg" />
+                </div>
+                <div class="image-box">
+                        <img class="image" src="../korea.jpg" />
+                </div>
+            </div>
+            <!-- <div class="row">
+                
+                <div class="col-mid-4">
+
+                </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -205,5 +228,19 @@
 
     p {
         font-size: 20px;
+
+    }
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image {
+        height: 400px;
+        width: 400px;
+        padding: 5%;
     }
 </style>
