@@ -202,4 +202,8 @@
     .sub-title {
         margin-top: 50px;
     }
+
+    p {
+        font-size: 20px;
+    }
 </style>
