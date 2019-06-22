@@ -25,20 +25,28 @@
         </div>
 
 
-        <!-- <div class="body-box">
+        <div class="body-box">
             <div class="container-fluid">
                 <div class="picture-box">
                     <div class="second-picture">
-                        gdgfdsgsdgsfd
+                        
                         <div class="row">
-                            <div class="col-sm">
-
+                            <div class="col-md-6">
+                                <div class="text-box">
+                                    <h1>Reuniting with familiar faces</h1> 
+                                    <p>I recently had the opportunity to go back to my hometown Busan, in South Korea. To be able to reconnect 
+                                        with my family and my culture was an unforgettable experience. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 video-box">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zuchgwZ1Abs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </template>
 
@@ -76,7 +84,7 @@
     }
 
     .intro-box {
-        margin-top: 10px;
+        margin: 10px;
         /* use 30% for small size */
         height: 60vh;
         min-height: 300px;
@@ -88,6 +96,7 @@
     @media screen and (max-width: 768px) {
         .intro-box {
             margin-top: 150px;
+            margin-bottom: 80px;
             /* height: 60vh;
             min-height: 300px;
             max-height: 400px;
@@ -99,6 +108,7 @@
     @media screen and (max-width: 450px) {
         .intro-box {
             margin-top: 200px;
+            margin-bottom: 100px;
         }
     }
 
@@ -107,6 +117,7 @@
         align-items: center;
         text-align: center;
         padding: 8%;
+        color: black;
     }
 
     /* 
@@ -137,6 +148,7 @@
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
+        filter: grayscale(40%);
     }
 
     .col-md {
