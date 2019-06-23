@@ -31,7 +31,6 @@
             <div class="container-fluid">
                 <div class="picture-box">
                     <div class="second-picture">
-
                         <div class="row">
                             <div class="col-md-6 latest-feed-box">
                                 <div class="text-box-2">
@@ -65,18 +64,23 @@
             <div class="images">
                 <div class="image-box">
                     <img class="image" src="../taiwan.jpg" />
+                    <div class="image-text">TAIWAN</div>
                 </div>
                 <div class="image-box">
                     <img class="image" src="../singapore.jpg" />
+                    <div class="image-text">SINGAPORE</div>
                 </div>
                 <div class="image-box">
                     <img class="image" src="../thailand.jpeg" />
+                    <div class="image-text">THAILAND</div>
                 </div>
                 <div class="image-box">
-                        <img class="image" src="../japan.jpg" />
+                    <img class="image" src="../japan.jpg" />
+                    <div class="image-text">JAPAN</div>
                 </div>
                 <div class="image-box">
-                        <img class="image" src="../korea.jpg" />
+                    <img class="image" src="../korea.jpg" />
+                    <div class="image-text">KOREA</div>
                 </div>
             </div>
             <!-- <div class="row">
@@ -120,6 +124,7 @@
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
+        filter: brightness(80%);
     }
 
     .intro-box {
@@ -198,6 +203,7 @@
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
+        /* filter: brightness(50%); */
     }
 
     .col-md {
@@ -242,5 +248,23 @@
         height: 400px;
         width: 400px;
         padding: 5%;
+        opacity: 0.85;
+        filter: brightness(80%);
+    }
+
+    .image-box {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .image-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        font-family: Helvetica;
+        font-weight: bold;
     }
 </style>
