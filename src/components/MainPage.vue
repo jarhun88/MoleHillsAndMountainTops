@@ -1,10 +1,10 @@
 <template>
     <div class="main-page">
-        <div class="header">
-            <div class="container-fluid page-header">
-                <div class="background"></div>
-            </div>
+        <div class="container-fluid page-header">
+            <!-- <div class="background"></div> -->
         </div>
+
+        <div class="padding"></div>
 
         <div class="intro-box">
             <div class="container">
@@ -26,32 +26,28 @@
             </div>
         </div>
 
+        <div class="padding"></div>
 
-        <div class="body-box">
-            <div class="container-fluid">
-                <div class="picture-box">
-                    <div class="second-picture">
-                        <div class="row">
-                            <div class="col-md-6 latest-feed-box">
-                                <div class="text-box-2">
-                                    <div class="latest-feed-title">
-                                        <h1>Reuniting with old faces</h1>
-                                    </div>
-                                    <div class="latest-feed-para">
-                                        <p>I recently had the opportunity to go back to my hometown Busan, in South
-                                            Korea. To be able to reconnect
-                                            with my family and my culture was an unforgettable experience.
-                                        </p>
-                                    </div>
-                                </div>
+        <div class="picture-box">
+            <div class="second-picture">
+                <div class="row">
+                    <div class="col-md-4 latest-feed-box">
+                        <div class="text-box-2">
+                            <div class="latest-feed-title">
+                                <h1>Reuniting with old faces</h1>
                             </div>
-                            <div class="col-md-6 video-box">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/zuchgwZ1Abs"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                            <div class="latest-feed-para">
+                                <p>I recently had the opportunity to go back to my hometown Busan, in South
+                                    Korea. To be able to reconnect
+                                    with my family and my culture was an unforgettable experience.
+                                </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-8 video-box">
+                        <iframe src="https://www.youtube.com/embed/zuchgwZ1Abs" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -83,12 +79,6 @@
                     <div class="image-text">KOREA</div>
                 </div>
             </div>
-            <!-- <div class="row">
-                
-                <div class="col-mid-4">
-
-                </div>
-            </div> -->
         </div>
     </div>
 </template>
@@ -107,18 +97,10 @@
         padding: 0;
     }
 
-    .header {
-        /* margin-bottom: 8%; */
-    }
-
     .page-header {
-        height: 70vh;
-        min-height: 250px;
-        max-height: 350px;
-    }
-
-
-    .background {
+        height: 80vh;
+        min-height: 550px;
+        max-height: 650px;
         background-image: url("pic.jpg");
         width: 100%;
         height: 100%;
@@ -128,13 +110,17 @@
     }
 
     .intro-box {
-        margin: 10px;
+        /* padding: 70px; */
         /* use 30% for small size */
-        height: 60vh;
-        min-height: 300px;
-        max-height: 400px;
+        height: 45vh;
+        min-height: 350px;
+        max-height: 550px;
         display: flex;
         align-items: center;
+    }
+
+    .padding{
+        height: 70px;
     }
 
     @media screen and (max-width: 768px) {
@@ -170,9 +156,7 @@
     }
 
 
-    /* .body-box {
-        margin-bottom: 30px;
-    } */
+    
 
     .profile-pic {
         height: 300px;
@@ -206,6 +190,14 @@
         /* filter: brightness(50%); */
     }
 
+    iframe {
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        max-height: 400px;
+        padding: 20px;
+    }
+
     .col-md {
         padding: 0px;
     }
@@ -229,12 +221,13 @@
     }
 
     .sub-title {
-        margin-top: 50px;
+        margin-top: 60px;
+
     }
 
     p {
         font-size: 20px;
-
+        padding: 20px;
     }
 
     .images {
@@ -248,7 +241,7 @@
         height: 400px;
         width: 400px;
         padding: 5%;
-        opacity: 0.85;
+        opacity: 0.95;
         filter: brightness(80%);
     }
 
