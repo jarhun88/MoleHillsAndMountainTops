@@ -161,9 +161,10 @@
         padding-top: 5%;
         display: flex;
         align-items: center;
-        text-align: center;
+        text-align: left;
         flex-direction: column;
         color: black;
+
     }
 
     .text-box-2 {
@@ -185,6 +186,11 @@
     .latest-feed {
         height: 90vh;
         min-height: 550px;
+    }
+
+    .latest-feed-para {
+        text-align: left;
+        padding-left: 40px;
     }
 
     @media screen and (max-width: 768px) {
@@ -216,6 +222,7 @@
         .latest-feed-para {
             position: relative;
             bottom: 50px;
+            text-align: left;
         }
 
         .video-box {
