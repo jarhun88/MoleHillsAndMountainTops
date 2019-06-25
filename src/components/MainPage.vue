@@ -1,7 +1,10 @@
 <template>
     <div class="main-page">
         <div class="container-fluid page-header">
-            <!-- <div class="background"></div> -->
+            <div class="title-box">
+                <div class="title">MoundstoMountains</div>
+                <p>Scribbles from my Journeys</p>
+            </div>
         </div>
 
         <div class="padding"></div>
@@ -31,13 +34,13 @@
                     <div class="col-md-6 latest-feed-box">
                         <div class="text-box-2">
                             <div class="latest-feed-title">
-                                <h1>Reuniting with old faces</h1>
+                                Reuniting with old faces
                             </div>
                             <div class="latest-feed-para">
-                                <p>I recently had the opportunity to go back to my hometown Busan, in South
+                                I recently had the opportunity to go back to my hometown Busan, in South
                                     Korea. To be able to reconnect
                                     with my family and my culture was an unforgettable experience.
-                                </p>
+                                
                             </div>
                         </div>
                     </div>
@@ -80,22 +83,22 @@
         <div class="padding"></div>
 
         <footer class="page-footer">
-                <div class="footer-content container-fluid">
-                        
-                        <!-- Grid row-->
-                        <div class="row">
-                    
-                          <!-- Grid column -->
-                          <div class="col-md-12 py-5">
-                            <div class="mb-5 flex-center">
-                             
-                            </div>
-                          </div>
-                          <!-- Grid column -->
-                    
+            <div class="footer-content container-fluid">
+
+                <!-- Grid row-->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12 py-5">
+                        <div class="mb-5 flex-center">
+
                         </div>
-                        <!-- Grid row-->
                     </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+            </div>
         </footer>
         <!-- <div class="footer-copyright text-center py-3">© 2018 Copyright:
                 <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
@@ -127,6 +130,16 @@
         background-size: cover;
         background-repeat: no-repeat;
         filter: brightness(80%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+    }
+
+    .title {
+        font-size: 60px;
+        top: 100px;
     }
 
     .intro-box {
@@ -170,7 +183,6 @@
     .text-box-2 {
         color: white;
         display: flex;
-        align-items: center;
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -188,6 +200,10 @@
     .latest-feed {
         height: 90vh;
         min-height: 550px;
+    }
+
+    .latest-feed-title {
+        font-size: 50px;
     }
 
     @media screen and (max-width: 768px) {
@@ -256,7 +272,7 @@
     }
 
 
-    div > iframe {
+    div>iframe {
         width: 100%;
         height: 80%;
         max-width: 600px;
@@ -280,6 +296,7 @@
 
     h1 {
         font-size: 50px;
+        margin: 0px;
     }
 
     /* .posts {
