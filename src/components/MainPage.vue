@@ -171,10 +171,12 @@
         color: white;
         display: flex;
         align-items: center;
-        text-align: center;
+        text-align: left;
         display: flex;
         flex-direction: column;
         margin-bottom: 310px;
+        padding-left: 40px;
+        padding-top: 10px;
     }
 
     .profile-pic {
@@ -186,11 +188,6 @@
     .latest-feed {
         height: 90vh;
         min-height: 550px;
-    }
-
-    .latest-feed-para {
-        text-align: left;
-        padding-left: 40px;
     }
 
     @media screen and (max-width: 768px) {
@@ -232,7 +229,7 @@
 
         .iframe {
             width: 100%;
-            max-height: 400px;
+            max-height: 300px;
             height: 100%;
         }
     }
@@ -263,7 +260,7 @@
         width: 100%;
         height: 80%;
         max-width: 600px;
-        max-height: 400px;
+        max-height: 350px;
         padding: 20px;
     }
 
