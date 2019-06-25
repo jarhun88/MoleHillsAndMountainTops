@@ -3,7 +3,7 @@
         <div class="container-fluid page-header">
             <div class="title-box">
                 <div class="title">MoundstoMountains</div>
-                <p>Scribbles from my Journeys</p>
+                <p>Adventures from my Life</p>
             </div>
         </div>
 
@@ -87,15 +87,14 @@
 
                 <!-- Grid row-->
                 <div class="row">
-
                     <!-- Grid column -->
-                    <div class="col-md-12 py-5">
-                        <div class="mb-5 flex-center">
-
-                        </div>
+                    <div class="col-md-12 py-5"> 
+                        <a href="https://www.facebook.com/john.song.5264382"><i class="fab fa-facebook" ></i></a>
+                        <a href="https://www.instagram.com/john_song_/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/jarhun88"><i class="fab fa-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UCSJrG7j5AwuUcoD9hLetkmw?view_as=subscriber"><i class="fab fa-youtube"></i></a>
                     </div>
                     <!-- Grid column -->
-
                 </div>
                 <!-- Grid row-->
             </div>
@@ -140,6 +139,12 @@
     .title {
         font-size: 60px;
         top: 100px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .title {
+            font-size: 10vw;
+        }
     }
 
     .intro-box {
@@ -344,6 +349,15 @@
     }
 
     .footer-content {
-        background: teal;
+        background: #058484;
+    }
+
+    .fab {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    a {
+        color:white;
     }
 </style>
