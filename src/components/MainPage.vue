@@ -3,7 +3,7 @@
         <div class="container-fluid page-header">
             <div class="title-box">
                 <div class="title">MoleHills&MountainTops</div>
-                <p>Adventures from my Life</p>
+                <div class="preview">Adventures from my Life</div>
             </div>
         </div>
 
@@ -136,14 +136,25 @@
         color: white;
     }
 
+    /* .title-box {
+        font-family: 'Stylish', sans-serif;
+    } */
+
     .title {
         font-size: 60px;
         top: 100px;
+        font-family: 'Saira Semi Condensed', sans-serif;
+        font-weight: bold;
+    }
+
+    .preview {
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 25px;
     }
 
     @media screen and (max-width: 600px) {
         .title {
-            font-size: 10vw;
+            font-size: 8vw;
         }
     }
 
