@@ -25,7 +25,7 @@
 
         <div class="padding"></div>
 
-        <div class="picture-box">
+        <div class="latest-feed">
             <div class="second-picture">
                 <div class="row">
                     <div class="col-md-6 latest-feed-box">
@@ -159,13 +159,13 @@
         border-radius: 50%;
     }
 
-    .picture-box {
+    .latest-feed {
         height: 90vh;
         min-height: 550px;
     }
 
     @media screen and (max-width: 768px) {
-        .picture-box {
+        .latest-feed {
             height: 100vh;
             min-height: 400px;
         }
