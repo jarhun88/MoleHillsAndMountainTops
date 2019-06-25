@@ -77,6 +77,29 @@
                 </div>
             </div>
         </div>
+        <div class="padding"></div>
+
+        <footer class="page-footer">
+                <div class="footer-content container-fluid">
+                        
+                        <!-- Grid row-->
+                        <div class="row">
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-12 py-5">
+                            <div class="mb-5 flex-center">
+                             
+                            </div>
+                          </div>
+                          <!-- Grid column -->
+                    
+                        </div>
+                        <!-- Grid row-->
+                    </div>
+        </footer>
+        <!-- <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+              </div> -->
     </div>
 </template>
 
@@ -255,9 +278,9 @@
         font-size: 50px;
     }
 
-    .posts {
+    /* .posts {
         height: 70vh;
-    }
+    } */
 
     .sub-title {
         margin-top: 60px;
@@ -297,5 +320,9 @@
         font-size: 32px;
         font-family: Helvetica;
         font-weight: bold;
+    }
+
+    .footer-content {
+        background: teal;
     }
 </style>
