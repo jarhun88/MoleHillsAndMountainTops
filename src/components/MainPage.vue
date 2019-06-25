@@ -2,7 +2,7 @@
     <div class="main-page">
         <div class="container-fluid page-header">
             <div class="title-box">
-                <div class="title">MoundstoMountains</div>
+                <div class="title">MoleHills&MountainTops</div>
                 <p>Adventures from my Life</p>
             </div>
         </div>
@@ -59,23 +59,23 @@
             </div>
             <div class="images">
                 <div class="image-box">
-                    <img class="image" src="../taiwan.jpg" />
+                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252661703"><img class="image" src="../taiwan.jpg" /></a>
                     <div class="image-text">TAIWAN</div>
                 </div>
                 <div class="image-box">
-                    <img class="image" src="../singapore.jpg" />
+                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252817771"><img class="image" src="../singapore.jpg" /></a>
                     <div class="image-text">SINGAPORE</div>
                 </div>
                 <div class="image-box">
-                    <img class="image" src="../thailand.jpeg" />
+                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252746627"><img class="image" src="../thailand.jpeg" /></a>
                     <div class="image-text">THAILAND</div>
                 </div>
                 <div class="image-box">
-                    <img class="image" src="../japan.jpg" />
+                        <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253151606"><img class="image" src="../japan.jpg" /></a>
                     <div class="image-text">JAPAN</div>
                 </div>
                 <div class="image-box">
-                    <img class="image" src="../korea.jpg" />
+                        <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771"><img class="image" src="../korea.jpg" /></a>
                     <div class="image-text">KOREA</div>
                 </div>
             </div>
@@ -359,5 +359,9 @@
 
     a {
         color:white;
+    }
+
+    a:hover {
+        opacity: 0.5;
     }
 </style>
