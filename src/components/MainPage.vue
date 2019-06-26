@@ -300,7 +300,7 @@
 
 
     div>iframe {
-        width: 90%;
+        width: 80%;
         height: 80%;
         max-width: 550px;
         max-height: 350px;
