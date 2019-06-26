@@ -18,9 +18,9 @@
                     </div>
                     <div class="col-md-6 text-box">
                         <p>Hello! I'm Jaehun, currently a student at the University of British Columbia. </p>
-                        <p>Recently, I've had the opportunity to travel to many different
-                            countries and exposure to many new cultures. I created this page as a means to showcase
-                            my personal experiences. I hope you enjoy your stay!</p>
+                        <p>Some facts about me: I love outdoor activities such as climbing, skiing and hiking, 
+                            I enjoy playing music and trying different cultural foods. I created this page as a 
+                            means to showcase my travels as well as my personal experiences. I hope you enjoy your stay!</p>
                     </div>
                 </div>
             </div>
