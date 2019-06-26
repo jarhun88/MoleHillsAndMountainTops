@@ -260,9 +260,20 @@
         }
 
         .iframe {
-            width: 100%;
-            max-height: 300px;
-            height: 100%;
+            min-height: 250px;
+            min-width: 400px;
+        }
+    }
+
+    @media screen and (max-height: 736px) {
+        .video-box {
+            position: relative;
+            top: 0px;
+        }
+
+        .iframe {
+            height: 300px;
+            width: 200px;
         }
     }
 
@@ -289,9 +300,9 @@
 
 
     div>iframe {
-        width: 100%;
+        width: 90%;
         height: 80%;
-        max-width: 600px;
+        max-width: 550px;
         max-height: 350px;
         padding: 20px;
     }
@@ -304,6 +315,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
     }
 
     .row {
