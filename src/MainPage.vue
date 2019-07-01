@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 profile-box">
-                        <img src="./john.jpeg" class="profile-pic" alt="Picture of John" width="304px"
+                        <img src="./images/john.jpeg" class="profile-pic" alt="Picture of John" width="304px"
                             height="236px" />
                     </div>
                     <div class="col-md-6 text-box">
@@ -59,23 +59,23 @@
             </div>
             <div class="images">
                 <div class="image-box">
-                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252661703"><img class="image" src="./taiwan.jpg" /></a>
+                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252661703"><img class="image" src="./images/taiwan.jpg" /></a>
                     <div class="image-text">TAIWAN</div>
                 </div>
                 <div class="image-box">
-                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252817771"><img class="image" src="./singapore.jpg" /></a>
+                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252817771"><img class="image" src="./images/singapore.jpg" /></a>
                     <div class="image-text">SINGAPORE</div>
                 </div>
                 <div class="image-box">
-                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252746627"><img class="image" src="./thailand.jpeg" /></a>
+                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252746627"><img class="image" src="./images/thailand.jpeg" /></a>
                     <div class="image-text">THAILAND</div>
                 </div>
                 <div class="image-box">
-                        <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253151606"><img class="image" src="./japan.jpg" /></a>
+                        <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253151606"><img class="image" src="./images/japan.jpg" /></a>
                     <div class="image-text">JAPAN</div>
                 </div>
                 <div class="image-box">
-                        <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771"><img class="image" src="./korea.jpg" /></a>
+                        <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771"><img class="image" src="./images/korea.jpg" /></a>
                     <div class="image-text">KOREA</div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
         height: 80vh;
         min-height: 550px;
         max-height: 650px;
-        background-image: url("./components/pic.jpg");
+        background-image: url("./images/pic.jpg");
         width: 100%;
         height: 100%;
         background-size: cover;
@@ -229,7 +229,7 @@
         }
 
         .second-picture {
-            background-image: url("./body.jpg");
+            background-image: url("./images/body.jpg");
             width: 100%;
             height: 100%;
             background-size: cover;
@@ -290,7 +290,7 @@
     }
 
     .second-picture {
-        background-image: url("./body.jpg");
+        background-image: url("./images/body.jpg");
         width: 100%;
         height: 100%;
         background-size: cover;
