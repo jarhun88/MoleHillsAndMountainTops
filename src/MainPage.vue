@@ -1,11 +1,6 @@
 <template>
     <div class="main-page">
-        <div class="container-fluid page-header">
-            <div class="title-box">
-                <div class="title">MoleHills&MountainTops</div>
-                <div class="preview">Adventures from my Life</div>
-            </div>
-        </div>
+        <Title/>
 
         <div class="padding"></div>
 
@@ -84,30 +79,28 @@
 
         <footer class="page-footer">
             <div class="footer-content container-fluid">
-
-                <!-- Grid row-->
                 <div class="row">
-                    <!-- Grid column -->
                     <div class="col-md-12 py-5"> 
                         <a href="https://www.facebook.com/john.song.5264382"><i class="fab fa-facebook" ></i></a>
                         <a href="https://www.instagram.com/john_song_/"><i class="fab fa-instagram"></i></a>
                         <a href="https://github.com/jarhun88"><i class="fab fa-github"></i></a>
                         <a href="https://www.youtube.com/channel/UCSJrG7j5AwuUcoD9hLetkmw?view_as=subscriber"><i class="fab fa-youtube"></i></a>
                     </div>
-                    <!-- Grid column -->
                 </div>
-                <!-- Grid row-->
             </div>
         </footer>
-        <!-- <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-              </div> -->
+
     </div>
 </template>
 
 <script>
+    import Title from "./components/Title.vue";
+
     export default {
         name: 'MainPage',
+        components: {
+            Title
+        },
         props: {
         }
     }
@@ -135,10 +128,6 @@
         flex-direction: column;
         color: white;
     }
-
-    /* .title-box {
-        font-family: 'Stylish', sans-serif;
-    } */
 
     .title {
         font-size: 60px;
@@ -295,7 +284,6 @@
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        /* filter: brightness(50%); */
     }
 
 
