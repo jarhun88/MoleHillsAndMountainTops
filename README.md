@@ -1,4 +1,6 @@
-# travelspa
+# MoleHillsAndMountainTops
+
+A website designed to hold my travel memoirs.
 
 ## Project setup
 ```
