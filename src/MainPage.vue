@@ -1,11 +1,8 @@
 <template>
     <div class="main-page">
         <Title />
-
         <div class="padding"></div>
-
-        <FeaturedPage />
-
+        <IntroPage />
         <div class="padding"></div>
 
         <div class="latest-feed">
@@ -80,13 +77,13 @@
 
 <script>
     import Title from "./components/Title.vue";
-    import FeaturedPage from "./components/FeaturedPage.vue";
+    import IntroPage from "./components/IntroPage.vue";
 
     export default {
         name: 'MainPage',
         components: {
             Title,
-            FeaturedPage
+            IntroPage
         },
         props: {
         }

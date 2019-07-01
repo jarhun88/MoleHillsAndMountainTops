@@ -1,5 +1,5 @@
 <template>
-    <div class="featured-box">
+    <div class="intro-box">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 profile-box">
@@ -19,7 +19,7 @@
 
 <script>
     export default {
-        name: 'FeaturedPage',
+        name: 'introPage',
         props: {
         }
     }
@@ -27,7 +27,7 @@
 
 <style scoped> 
 
-    .featured-box {
+    .intro-box {
         height: 45vh;
         min-height: 350px;
         max-height: 550px;
