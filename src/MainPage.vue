@@ -1,25 +1,10 @@
 <template>
     <div class="main-page">
-        <Title/>
+        <Title />
 
         <div class="padding"></div>
 
-        <div class="intro-box">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 profile-box">
-                        <img src="./images/john.jpeg" class="profile-pic" alt="Picture of John" width="304px"
-                            height="236px" />
-                    </div>
-                    <div class="col-md-6 text-box">
-                        <p>Hello! I'm Jaehun, currently a student at the University of British Columbia. </p>
-                        <p>Some facts about me: I love outdoor activities such as climbing, skiing and hiking, 
-                            I enjoy playing music and trying different cultural foods. I created this page as a 
-                            means to showcase my travels as well as my personal experiences. I hope you enjoy your stay!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <FeaturedPage />
 
         <div class="padding"></div>
 
@@ -95,11 +80,13 @@
 
 <script>
     import Title from "./components/Title.vue";
+    import FeaturedPage from "./components/FeaturedPage.vue";
 
     export default {
         name: 'MainPage',
         components: {
-            Title
+            Title,
+            FeaturedPage
         },
         props: {
         }
@@ -107,49 +94,12 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
     .container-fluid {
         padding: 0;
     }
 
-    .page-header {
-        height: 80vh;
-        min-height: 550px;
-        max-height: 650px;
-        background-image: url("./images/pic.jpg");
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        filter: brightness(80%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        color: white;
-    }
-
-    .title {
-        font-size: 60px;
-        top: 100px;
-        font-family: 'Saira Semi Condensed', sans-serif;
-        font-weight: bold;
-    }
-
-    .preview {
-        font-family: 'Ubuntu Mono', monospace;
-        font-size: 25px;
-    }
-
-    @media screen and (max-width: 600px) {
-        .title {
-            font-size: 8vw;
-        }
-    }
-
     .intro-box {
-        /* padding: 70px; */
-        /* use 30% for small size */
         height: 45vh;
         min-height: 350px;
         max-height: 550px;
@@ -182,7 +132,6 @@
         text-align: left;
         flex-direction: column;
         color: black;
-
     }
 
     .text-box-2 {
