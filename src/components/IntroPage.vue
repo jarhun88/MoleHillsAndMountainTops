@@ -19,7 +19,7 @@
 
 <script>
     export default {
-        name: 'introPage',
+        name: 'IntroPage',
         props: {
         }
     }
@@ -33,6 +33,20 @@
         max-height: 550px;
         display: flex;
         align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .intro-box {
+            margin-top: 150px;
+            margin-bottom: 80px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .intro-box {
+            margin-top: 200px;
+            margin-bottom: 100px;
+        }
     }
 
     .profile-box {
