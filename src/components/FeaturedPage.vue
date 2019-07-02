@@ -25,15 +25,6 @@
     </div>
 </template>
 
-
-<script>
-    export default {
-        name: 'FeaturedPage',
-        props: {
-        }
-    }
-</script>
-
 <script>
     export default {
         name: 'FeaturedPage',
