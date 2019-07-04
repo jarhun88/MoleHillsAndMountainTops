@@ -2,7 +2,7 @@
     <div class="container-fluid page-header">
         <div class="title-box">
             <div class="title">MoleHills&MountainTops</div>
-            <div class="preview">Adventures from my Life</div>
+            <div class="preview">Things I've done and seen</div>
         </div>
     </div>
 </template>

@@ -11,7 +11,6 @@
                             I recently had the opportunity to go back to my hometown Busan, in South
                                 Korea. To be able to reconnect
                                 with my family and my culture was an unforgettable experience.
-                            
                         </div>
                     </div>
                 </div>
@@ -34,6 +33,7 @@
 </script>
 
 <style scoped> 
+
 .latest-feed {
         height: 90vh;
         min-height: 550px;
