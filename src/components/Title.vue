@@ -2,7 +2,7 @@
     <div class="container-fluid page-header">
         <div class="title-box">
             <div class="title">MoleHills&MountainTops</div>
-            <div class="preview">Things I've done and seen</div>
+            <div class="preview">A Self Blog for Remembrance</div>
         </div>
     </div>
 </template>
@@ -22,8 +22,8 @@
         min-height: 550px;
         max-height: 650px;
         background-image: url("../images/pic.jpg");
-        width: 100%;
-        height: 100%;
+        /* // width: 100%;
+        // height: 100%; */
         background-size: cover;
         background-repeat: no-repeat;
         filter: brightness(80%);

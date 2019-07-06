@@ -68,7 +68,7 @@
     }
 
     .button-box {
-        margin-top: 50px;
+        margin-top: 1%;
         padding: 8px;
         display: flex;
         justify-content: left;
@@ -85,7 +85,7 @@
         }
 
         .text-box-2 {
-            height: 40%;
+            /*  height: 40%; */
             display: flex;
             align-items: flex-start;
             margin-bottom: 0px;
@@ -103,5 +103,13 @@
             font-size: 20px;
         }
     }
+
+    @media screen and (max-width: 432px){
+        .text-box-2 {
+            margin-top: 50px;
+        }
+    }
+
+
 
 </style>
