@@ -46,7 +46,7 @@
         font-size: 25px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 640px) {
         .title {
             font-size: 8vw;
         }

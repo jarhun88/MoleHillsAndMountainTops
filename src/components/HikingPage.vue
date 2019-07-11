@@ -1,21 +1,19 @@
 <template>
     <div class="hiking-page">
-        <div class="background-hike-photo">
-            <div class="row">
-                <div class="col-md-6 latest-feed-box">
-                    <div class="text-box-2">
-                        <div class="latest-feed-title">
-                            Hiking the World
-                        </div>
-                        <div class="hiking-para">
-                            Hiking has been an activity I've come to appreciate more and more as it gives me a temporary 
-                            respite from the stresses of my day to day, and allows me to really live just in the moment. 
-                            It's a truly meditative feeling where I can allow myself to explore creative avenues, or just 
-                            not think at all while taking in the breathtaking nature that I surround myself with. 
-                        </div>
-                        <div class="button-box">
-                            <a href="https://medium.com/@likisongproduct/"><button type="button" class="btn btn-light">Explore with me</button></a>
-                        </div>
+        <img class="background-hike-photo" src="../images/hike.jpg" />
+        <div class="row position-box">
+            <div class="col-md-6 hike-box">
+                <div class="text-box-2">
+                    <div class="hike-title">My Treks</div>
+                    <div class="hike-subtitle">Go Explore</div>
+                    <div class="hiking-para">
+                        Hiking has been an activity I've come to appreciate more and more as it gives me a temporary
+                        respite from the stresses of my day to day, and allows me to really live just in the moment.
+                        It's a truly meditative feeling where I can allow myself to explore creative avenues, or just
+                        not think at all while taking in the breathtaking nature that I surround myself with.
+                    </div>
+                    <div class="button-box">
+                        <a href="https://medium.com/@likisongproduct/"><button type="button" class="btn btn-light">Explore with me</button></a>
                     </div>
                 </div>
             </div>
@@ -32,25 +30,36 @@
 </script>
 
 <style scoped>
-
     .hiking-page {
-        height: 40vh;
-        min-height: 550px;
+        position: relative;
+        text-align: center;
+        height: 100%;
     }
 
     .background-hike-photo {
-        background-image: url("../images/hike.jpg");
         width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
+        height: 600px;
+        /* min-height: 550px; */
+        object-fit: cover;
     }
 
-    .latest-feed-title {
+    .position-box {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+
+    .hike-title {
         font-size: 50px;
     }
 
-    .latest-feed-box {
+    .hike-subtitle {
+        padding-top: 8px;
+        padding-bottom: 8px; 
+        font-size: 16px; 
+    }
+
+    .hike-box {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -79,8 +88,8 @@
     }
 
     @media screen and (max-width: 768px) {
-        .latest-feed {
-            height: 100vh;
+        .hike-box {
+            height: auto;
             min-height: 400px;
         }
 
@@ -91,7 +100,15 @@
             margin-bottom: 0px;
         }
 
-        .latest-feed-title {
+        .hike-title {
+            position: relative;
+            bottom: 50px;
+        }
+
+        .hike-subtitle {
+            padding-top: 8px;
+            padding-bottom: 8px; 
+            font-size: 16px; 
             position: relative;
             bottom: 50px;
         }
@@ -104,12 +121,13 @@
         }
     }
 
-    @media screen and (max-width: 432px){
+    @media screen and (max-width: 432px) {
+        .background-hike-photo {
+            width: 100%;
+            height: 750px;
+        }
         .text-box-2 {
-            margin-top: 50px;
+            padding: 0px;
         }
     }
-
-
-
 </style>
