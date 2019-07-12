@@ -2,7 +2,7 @@
     <div class="hiking-page">
         <img class="background-hike-photo" src="../images/hike.jpg" />
         <div class="row position-box">
-            <div class="col-md-6 hike-box">
+            <div class="col-md-6">
                 <div class="text-box-2">
                     <div class="hike-title">My Treks</div>
                     <div class="hike-subtitle">Go Explore</div>
@@ -39,8 +39,9 @@
     .background-hike-photo {
         width: 100%;
         height: 600px;
-        /* min-height: 550px; */
         object-fit: cover;
+        opacity: 1;
+        filter: brightness(70%);
     }
 
     .position-box {
@@ -57,12 +58,6 @@
         padding-top: 8px;
         padding-bottom: 8px; 
         font-size: 16px; 
-    }
-
-    .hike-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .text-box-2 {
@@ -88,13 +83,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        .hike-box {
-            height: auto;
-            min-height: 400px;
-        }
-
         .text-box-2 {
-            /*  height: 40%; */
             display: flex;
             align-items: flex-start;
             margin-bottom: 0px;
@@ -102,7 +91,6 @@
 
         .hike-title {
             position: relative;
-            bottom: 50px;
         }
 
         .hike-subtitle {
@@ -110,14 +98,13 @@
             padding-bottom: 8px; 
             font-size: 16px; 
             position: relative;
-            bottom: 50px;
         }
 
         .hiking-para {
             position: relative;
-            bottom: 50px;
             text-align: left;
             font-size: 20px;
+            padding-right: 20px;
         }
     }
 
