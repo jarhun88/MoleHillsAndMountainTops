@@ -3,7 +3,7 @@
         <img class="background-hike-photo" src="../images/hike.jpg" />
         <div class="row position-box">
             <div class="col-md-6">
-                <div class="text-box-2">
+                <div class="text-box">
                     <div class="hike-title">My Treks</div>
                     <div class="hike-subtitle">Go Explore</div>
                     <div class="hiking-para">
@@ -60,7 +60,7 @@
         font-size: 16px; 
     }
 
-    .text-box-2 {
+    .text-box {
         color: white;
         display: flex;
         text-align: left;
@@ -83,7 +83,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        .text-box-2 {
+        .text-box {
             display: flex;
             align-items: flex-start;
             margin-bottom: 0px;
@@ -113,7 +113,7 @@
             width: 100%;
             height: 750px;
         }
-        .text-box-2 {
+        .text-box {
             padding: 0px;
         }
     }

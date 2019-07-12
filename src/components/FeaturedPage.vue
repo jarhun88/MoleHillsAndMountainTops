@@ -3,7 +3,7 @@
         <img class="background-featured-photo" src="../images/body.jpg" />
         <div class="row position-box">
             <div class="col-md-6 ">
-                <div class="text-box-2">
+                <div class="text-box">
                     <div class="fp-title">A Family Reunion</div>
                     <div class="fp-subtitle">Go Learn</div>
                     <div class="fp-para">
@@ -76,7 +76,7 @@
         justify-content: center;
     }
 
-    .text-box-2 {
+    .text-box {
         color: white;
         display: flex;
         text-align: left;
@@ -88,9 +88,10 @@
     }
 
     @media screen and (max-width: 767px) {
-        .text-box-2 {
+        .text-box {
             align-items: flex-start;
             margin-bottom: 0px;
+            padding: 0px;
         }
 
         .fp-title {
@@ -108,6 +109,7 @@
             min-width: 300px;
             min-height: 250px;
             padding-bottom: 100px;
+            padding-left: 0px;
         }
     }
 
