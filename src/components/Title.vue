@@ -25,19 +25,19 @@
         background-image: url("../images/pic.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        filter: brightness(80%);
+        filter: brightness(90%);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        color: white;
     }
 
     .title {
-        font-size: 60px;
+        font-size: 5rem;
         top: 100px;
         font-family: 'Saira Semi Condensed', sans-serif;
         font-weight: bold;
+        color: #FFFFFF;
     }
 
     .preview {
@@ -45,6 +45,7 @@
         font-size: 25px;
         display: flex;
         justify-content: center;
+        color: #FFFFFF;
     }
 
     .bottom-bar {
@@ -53,7 +54,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #DBDCDC;
+        color: #C6C6C6;
         border-bottom: 1px solid #E4E5E5;
     }
 
@@ -62,9 +63,9 @@
         text-align: center;
     }
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 867px) {
         .title {
-            font-size: 8vw;
+            font-size: 3rem;
         }
     }
 </style>

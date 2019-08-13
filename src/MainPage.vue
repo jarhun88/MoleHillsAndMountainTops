@@ -35,8 +35,7 @@
     }
 </script>
 
-<style >
-    
+<style>
     html,
     body {
         width: 100%;
@@ -44,6 +43,14 @@
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;
+        font-size: 100%;
+    }
+
+    @media screen and (max-width: 640px) {
+        html,
+        body {
+            font-size: 60%;
+        }
     }
 
     .container-fluid {
