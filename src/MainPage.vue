@@ -1,9 +1,7 @@
 <template>
     <div class="main-page">
         <Title />
-        <!-- <div class="padding"></div> -->
         <IntroPage />
-        <!-- <div class="padding"></div> -->
         <HikingPage />
         <div class="padding"></div>
         <FeaturedPage />
@@ -37,7 +35,7 @@
     }
 </script>
 
-<style>
+<style >
     
     html,
     body {

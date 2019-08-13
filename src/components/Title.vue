@@ -1,8 +1,11 @@
 <template>
-    <div class="container-fluid page-header">
-        <div class="title-box">
+    <div>
+        <div class="container-fluid page-header">
             <div class="title">MoleHills&MountainTops</div>
             <div class="preview">A Self Blog for Remembrance</div>
+        </div>
+        <div class="bottom-bar">
+            <p>Scroll for more</p>
         </div>
     </div>
 </template>
@@ -16,14 +19,10 @@
 </script>
 
 <style scoped>
-
     .page-header {
-        height: 80vh;
+        height: 90vh;
         min-height: 550px;
-        max-height: 650px;
         background-image: url("../images/pic.jpg");
-        /* // width: 100%;
-        // height: 100%; */
         background-size: cover;
         background-repeat: no-repeat;
         filter: brightness(80%);
@@ -44,6 +43,23 @@
     .preview {
         font-family: 'Ubuntu Mono', monospace;
         font-size: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bottom-bar {
+        font-family: 'Ubuntu Mono', monospace;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #DBDCDC;
+        border-bottom: 1px solid #E4E5E5;
+    }
+
+    p {
+        margin-bottom: 5px;
+        text-align: center;
     }
 
     @media screen and (max-width: 640px) {
@@ -51,6 +67,4 @@
             font-size: 8vw;
         }
     }
-
-
 </style>
