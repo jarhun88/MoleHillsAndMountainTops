@@ -4,9 +4,9 @@
         <IntroPage />
         <FeaturedPage />
         <PostPage />
-        <div class="padding"></div>
-        <HikingPage />
-        <div class="padding"></div>
+        <!-- <div class="padding"></div> -->
+        <!-- <HikingPage /> -->
+        <!-- <div class="padding"></div> -->
         <Footer />
     </div>
 </template>
@@ -16,7 +16,7 @@
     import IntroPage from "./components/IntroPage.vue";
     import FeaturedPage from "./components/FeaturedPage.vue";
     import PostPage from "./components/PostPage.vue";
-    import HikingPage from "./components/HikingPage.vue";
+    // import HikingPage from "./components/HikingPage.vue";
     import Footer from "./components/Footer.vue";
 
 
@@ -27,7 +27,7 @@
             IntroPage,
             FeaturedPage,
             PostPage,
-            HikingPage,
+            // HikingPage,
             Footer,
         },
         props: {
@@ -46,10 +46,10 @@
         font-size: 100%;
     }
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 375px) {
         html,
         body {
-            font-size: 60%;
+            font-size: 75%;
         }
     }
 

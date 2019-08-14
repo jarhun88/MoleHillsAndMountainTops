@@ -12,7 +12,7 @@
                 Experience everything <br />life has to offer.
             </div>
             <div class="para">
-                <p>There are so many things I want to <strong> see and learn </strong>in my life. <br />
+                <p>There are so many things I want to <strong> see and learn </strong>in my life. 
                     60 years from now, I want to be able to look back on all my accomplishments and experiences without
                     <strong>  a single regret. </strong>
                 </p>
@@ -35,7 +35,7 @@
 <style scoped>
     .intro-box {
         padding: 0px;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -107,6 +107,25 @@
         width: 200px;
         overflow: hidden;
         border-radius: 50%;
+    }
+
+    @media screen and (max-width: 960px){
+        .title{
+            font-size: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 586px){
+        .title{
+            font-size: 2rem;
+        }
+
+        .current {
+        margin: 10%;
+        padding: 0px;
+    }
+
+
     }
 
 </style>

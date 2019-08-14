@@ -5,7 +5,7 @@
             <div class="preview">A Self Blog for Remembrance</div>
         </div>
         <div class="bottom-bar">
-            <p>Scroll for more</p>
+            <p>Scroll Down</p>
         </div>
     </div>
 </template>
@@ -66,6 +66,12 @@
     @media screen and (max-width: 867px) {
         .title {
             font-size: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 535px) {
+        .title {
+            font-size: 2rem;
         }
     }
 </style>
