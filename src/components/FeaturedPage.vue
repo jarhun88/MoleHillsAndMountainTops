@@ -8,11 +8,11 @@
                 “Adventure is worthwhile.” <br />– Aesop
             </div>
             <div class="para">
-                <p> Travel has opened my eyes <strong> beyond the scope </strong> of what I initally believed to be my
+                <p> Travelling has opened my eyes <strong> beyond the scope </strong> of what I initally believed to be my
                     world.
                     It has taught me confidence, the fortitude to overcome obstacles, and a <strong> thankful </strong>
                     and
-                    <strong> humble </strong> mentality.
+                    <strong> humble </strong> view towards life.
                 </p>
             </div>
             <div class="current">
@@ -36,6 +36,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
+        background-color: #f7f9fd;
     }
 
     .sub-title {
@@ -86,7 +87,7 @@
         flex-direction: column;
         text-align: center;
         height: 70%;
-        margin: 10%;
+        margin: 8%;
     }
 
     .text {

@@ -91,7 +91,7 @@
         flex-direction: column;
         text-align: center;
         height: 70%;
-        border-bottom: 1px solid #E4E5E5;
+        /* border-bottom: 1px solid #E4E5E5; */
     }
 
     .text {

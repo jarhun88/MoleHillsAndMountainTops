@@ -10,7 +10,9 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="../images/taiwan.jpg" alt="Card image cap">
+                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252661703">
+                    <img class="card-img-top" src="../images/taiwan.jpg" alt="Card image cap">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Taiwan</h5>
                     <p class="card-text"></p>
@@ -18,7 +20,10 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="../images/singapore.jpg" alt="Card image cap">
+                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252817771">
+                    <img class="card-img-top" src="../images/singapore.jpg" alt="Card image cap">
+                </a>
+
                 <div class="card-body">
                     <h5 class="card-title">Singapore</h5>
                     <p class="card-text"></p>
@@ -26,7 +31,9 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="../images/thailand.jpeg" alt="Card image cap">
+                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252746627">
+                    <img class="card-img-top" src="../images/thailand.jpeg" alt="Card image cap">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Thailand</h5>
                     <p class="card-text"></p>
@@ -34,7 +41,9 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img-top" src="../images/japan.jpg" alt="Card image cap">
+                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253151606">
+                    <img class="card-img-top" src="../images/japan.jpg" alt="Card image cap">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Japan</h5>
                     <p class="card-text"></p>
@@ -43,35 +52,15 @@
             </div>
 
             <div class="card">
-                <img class="card-img-top" src="../images/korea.jpg" alt="Card image cap">
+                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771">
+                    <img class="card-img-top" src="../images/korea.jpg" alt="Card image cap">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Korea</h5>
                     <p class="card-text"></p>
                     <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
                 </div>
             </div>
-
-
-            <!-- <div class="image-box">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252661703"><img class="image" src="../images/taiwan.jpg" /></a>
-                <div class="image-text">TAIWAN</div>
-            </div>
-            <div class="image-box">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252817771"><img class="image" src="../images/singapore.jpg" /></a>
-                <div class="image-text">SINGAPORE</div>
-            </div>
-            <div class="image-box">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252746627"><img class="image" src="../images/thailand.jpeg" /></a>
-                <div class="image-text">THAILAND</div>
-            </div>
-            <div class="image-box">
-                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253151606"><img class="image" src="../images/japan.jpg" /></a>
-                <div class="image-text">JAPAN</div>
-            </div>
-            <div class="image-box">
-                    <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771"><img class="image" src="../images/korea.jpg" /></a>
-                <div class="image-text">KOREA</div>
-            </div> -->
         </div>
     </div>
 </template>
@@ -86,7 +75,7 @@
 
 <style scoped>
     .posts {
-        height: 200vh;
+        height: 100%;
     }
 
     .sub-title {
@@ -98,6 +87,8 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
     .image {
@@ -127,7 +118,7 @@
     .card-img-top {
         position: relative;
         /* object-fit: cover; */
-        height: 350px;
+        height: 320px;
         opacity: 0.95;
         filter: brightness(80%);
     }
@@ -136,11 +127,16 @@
         padding: 1px;
         width: 25%;
         border: none;
+        margin-bottom: 2%;
     }
 
     .card-title {
         font-family: 'Trebuchet MS';
         font-size: 1.2rem;
+    }
+
+    a:hover {
+        filter: brightness(40%);
     }
 
     @media screen and (max-width: 1100px) {
@@ -165,7 +161,8 @@
         }
 
         .posts {
-        height: 400vh;
+            height: 400vh;
+        }
     }
-    }
+
 </style>
