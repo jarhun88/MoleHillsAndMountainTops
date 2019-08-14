@@ -1,8 +1,8 @@
 <template>
     <div class="posts">
-        <div class="sub-title">
+        <!-- <div class="sub-title">
             <h3>Latest Destinations</h3>
-        </div>
+        </div> -->
         <div class="images">
             <div class="image-box">
                 <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252661703"><img class="image" src="../images/taiwan.jpg" /></a>
