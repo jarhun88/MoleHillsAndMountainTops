@@ -2,10 +2,10 @@
     <div class="main-page">
         <Title />
         <IntroPage />
-        <HikingPage />
-        <div class="padding"></div>
         <FeaturedPage />
         <PostPage />
+        <div class="padding"></div>
+        <HikingPage />
         <div class="padding"></div>
         <Footer />
     </div>
