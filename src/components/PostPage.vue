@@ -2,7 +2,7 @@
     <div class="posts">
         <div class="card-container">
             <div class="card">
-                <img class="card-img-top" src="../images/peru.jpg" alt="Card image cap">
+                <img class="card-img-top" id = "hi" src="../images/peru.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Peru</h5>
                     <p class="card-text"></p>
@@ -118,7 +118,7 @@
     .card-img-top {
         position: relative;
         /* object-fit: cover; */
-        height: 320px;
+        height: 350px;
         opacity: 0.95;
         filter: brightness(80%);
     }

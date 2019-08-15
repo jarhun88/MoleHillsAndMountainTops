@@ -8,7 +8,8 @@
                 “Adventure is worthwhile.” <br />– Aesop
             </div>
             <div class="para">
-                <p> Travelling has opened my eyes <strong> beyond the scope </strong> of what I initally believed to be my
+                <p> Travelling has opened my eyes <strong> beyond the scope </strong> of what I initally believed to be
+                    my
                     world.
                     It has taught me confidence, the fortitude to overcome obstacles, and a <strong> thankful </strong>
                     and
@@ -16,16 +17,24 @@
                 </p>
             </div>
             <div class="current">
-                <button type="button" class="btn btn-outline-primary">Explore with me</button>
+                <button type="button" class="btn btn-outline-primary" @click="scroll">Explore with me</button>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    /* eslint-disable */
     export default {
         name: 'FeaturedPage',
         props: {
+        },
+        methods: {
+            scroll(){
+                // alert("hel");
+                window.location.hash = "hi";
+                window.location.hash = "";
+            },
         }
     }
 </script>
@@ -102,7 +111,7 @@
         color: #147ED7;
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 500px) {
         .title {
             font-size: 2.5rem;
         }
@@ -111,5 +120,4 @@
             height: 110vh;
         }
     }
-
 </style>
