@@ -82,7 +82,7 @@
     }
 
     .profile-box {
-        margin: 4%;
+        margin: 5%;
         height: 30%;
     }
 
@@ -118,6 +118,10 @@
     @media screen and (max-width: 586px){
         .title{
             font-size: 2rem;
+        }
+
+        .profile-box {
+            margin: 10%;
         }
 
         .current {

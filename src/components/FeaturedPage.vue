@@ -1,11 +1,13 @@
 <template>
     <div class="container-fluid intro-box">
         <div class="text-box">
-            <div class="sub-title">
-                <h4>Inspiration</h4>
-            </div>
-            <div class="title">
-                “Adventure is worthwhile.” <br />– Aesop
+            <div class="title-box">
+                <div class="sub-title">
+                    <h4>Inspiration</h4>
+                </div>
+                <div class="title">
+                    “Adventure is worthwhile.” <br />– Aesop
+                </div>
             </div>
             <div class="para">
                 <p> Travelling has opened my eyes <strong> beyond the scope </strong> of what I initally believed to be
@@ -30,7 +32,7 @@
         props: {
         },
         methods: {
-            scroll(){
+            scroll() {
                 // alert("hel");
                 window.location.hash = "hi";
                 window.location.hash = "";
@@ -43,9 +45,19 @@
     .intro-box {
         padding: 0px;
         height: 100%;
+        background-color: #f7f9fd;
+    }
+
+    .text-box {
         display: flex;
         flex-direction: column;
-        background-color: #f7f9fd;
+        text-align: center;
+        height: 100%;
+        margin: 8%;
+    }
+
+    .title-box {
+        margin: 5%;
     }
 
     .sub-title {
@@ -54,6 +66,7 @@
         padding-right: 20%;
         font-size: 1.25rem;
         color: #147ED7;
+        margin: 2%;
     }
 
     .title {
@@ -91,14 +104,6 @@
         height: 30%;
     }
 
-    .text-box {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        height: 70%;
-        margin: 8%;
-    }
-
     .text {
         margin: auto;
     }
@@ -114,6 +119,14 @@
     @media screen and (max-width: 500px) {
         .title {
             font-size: 2.5rem;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin: 6%;
+        }
+
+        .title-box {
+            margin-top: 10%;
+            margin-bottom: 5%;
         }
 
         .intro-box {

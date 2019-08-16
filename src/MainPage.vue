@@ -49,7 +49,7 @@
     @media screen and (max-width: 375px) {
         html,
         body {
-            font-size: 75%;
+            font-size: 90%;
         }
     }
 
