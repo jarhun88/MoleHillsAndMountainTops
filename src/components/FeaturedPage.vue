@@ -94,7 +94,7 @@
     }
 
     .current {
-        margin-top: 10%;
+        margin-top: 5%;
         font-size: 1.25rem;
         font-family: 'Trebuchet MS';
     }

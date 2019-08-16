@@ -82,7 +82,8 @@
     }
 
     .profile-box {
-        margin: 5%;
+        margin: 3%;
+        padding-top: 3%;
         height: 30%;
     }
 
