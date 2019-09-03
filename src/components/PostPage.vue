@@ -2,7 +2,9 @@
     <div class="posts">
         <div class="card-container">
             <div class="card">
-                <img class="card-img-top" id = "hi" src="../images/peru.jpg" alt="Card image cap">
+                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157710668016766">
+                    <img class="card-img-top" id="hi" src="../images/peru.jpg" alt="Card image cap">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">Peru</h5>
                     <p class="card-text"></p>
@@ -164,5 +166,4 @@
             height: 400vh;
         }
     }
-
 </style>
