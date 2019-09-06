@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid intro-box">
+    <div class="container-fluid featured-box">
         <div class="text-box">
             <div class="title-box">
                 <div class="sub-title">
@@ -10,12 +10,9 @@
                 </div>
             </div>
             <div class="para">
-                <p> Travelling has opened my eyes <strong> beyond the scope </strong> of what I initally believed to be
-                    my
-                    world.
-                    It has taught me confidence, the fortitude to overcome obstacles, and a <strong> thankful </strong>
-                    and
-                    <strong> humble </strong> view towards life.
+                <p> Travelling has opened my eyes <strong> beyond the scope </strong> of what I initally imagined to be
+                    my world. Through my experiences, I have gained self confidence, the fortitude to overcome challenging obstacles, and a renewed <strong> respect </strong>
+                    and <strong> humility </strong> towards the world.
                 </p>
             </div>
             <div class="current">
@@ -42,7 +39,7 @@
 </script>
 
 <style scoped>
-    .intro-box {
+    .featured-box {
         padding: 0px;
         height: 100%;
         background-color: #f7f9fd;

@@ -14,11 +14,8 @@
             <div class="para">
                 <p>There are so many things I want to <strong> see and learn </strong>in my life. 
                     60 years from now, I want to be able to look back on all my accomplishments and experiences without
-                    <strong>  a single regret. </strong>
+                    <strong> any regrets. </strong>
                 </p>
-            </div>
-            <div class="current">
-                What I'm up to right now: _________
             </div>
         </div>
     </div>
@@ -35,7 +32,6 @@
 <style scoped>
     .intro-box {
         padding: 0px;
-        height: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -72,18 +68,9 @@
         font-size: 1.25rem;
     }
 
-    .current {
-        height: 10%;
-        margin: 2%;
-        padding-left: 20%;
-        padding-right: 20%;
-        font-size: 1.25rem;
-        font-family: 'Trebuchet MS';
-    }
-
     .profile-box {
         margin: 3%;
-        padding-top: 3%;
+        padding-top: 2%;
         height: 30%;
     }
 
@@ -92,7 +79,6 @@
         flex-direction: column;
         text-align: center;
         height: 70%;
-        /* border-bottom: 1px solid #E4E5E5; */
     }
 
     .text {
@@ -129,8 +115,6 @@
         margin: 10%;
         padding: 0px;
     }
-
-
     }
 
 </style>
