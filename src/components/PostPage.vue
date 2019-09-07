@@ -65,13 +65,13 @@
         </div>
 
         <div class="card">
-            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771">
+            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157710729609813">
                 <img class="card-img-top" src="../images/sf.jpg" alt="Card image cap">
             </a>
             <div class="card-body">
                 <h5 class="card-title">USA</h5>
                 <p class="card-description2">The Patriotic Country Which Never Sleeps.</p>
-                <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
+                <p class="card-text"><small class="text-muted">Often Visited</small></p>
             </div>
         </div>
 
@@ -82,7 +82,7 @@
             <div class="card-body">
                 <h5 class="card-title">Canada</h5>
                 <p class="card-description2">The True North Strong and Free.</p>
-                <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
+                <p class="card-text"><small class="text-muted">Home Country</small></p>
             </div>
         </div>
 
