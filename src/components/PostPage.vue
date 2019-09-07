@@ -59,7 +59,7 @@
                 </a>
                 <div class="card-body">
                     <h5 class="card-title">Korea</h5>
-                    <p class="card-description">A place of Culturally Energetic and Electric People.</p>
+                    <p class="card-description">Reuniting with my Home Culture.</p><br>
                     <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
                 </div>
             </div>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="card">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771">
+                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157710729795031">
                     <img class="card-img-top" src="../images/van.jpeg" alt="Card image cap">
                 </a>
                 <div class="card-body">

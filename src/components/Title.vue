@@ -2,7 +2,7 @@
     <div>
         <div class="container-fluid page-header">
             <div class="title">MoleHills&MountainTops</div>
-            <div class="preview">A Self Blog for Remembrance</div>
+            <div class="preview">Travel KeepSakes</div>
         </div>
         <div class="bottom-bar">
             <p>Scroll Down</p>

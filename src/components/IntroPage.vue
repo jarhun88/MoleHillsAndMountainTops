@@ -6,15 +6,17 @@
 
         <div class="text-box">
             <div class="sub-title">
-                <h4>My personal mandate</h4>
+                <h4>Why Do I Travel?</h4>
             </div>
             <div class="title">
-                Experience everything <br />life has to offer.
+                I Love Experiencing <br /> New Cultures and Ideas!
             </div>
             <div class="para">
-                <p>There are so many things I want to <strong> see and learn </strong>in my life. 
-                    60 years from now, I want to be able to look back on all my accomplishments and experiences without
-                    <strong> any regrets. </strong>
+                <p>
+                    My Favourite part of traveling is that I get to observe and experience different people
+                    and their cultures; <strong>beliefs</strong> and <strong>concepts</strong> that I never would have come up with on my own. 
+                    I like to think I add a little bit of their culture into myself in order to become a more <strong>well rounded </strong>
+                    individual. Plus I love trying new <strong>FOOD.</strong>
                 </p>
             </div>
         </div>

@@ -10,13 +10,16 @@
                 </div>
             </div>
             <div class="para">
-                <p> Travelling has opened my eyes <strong> beyond the scope </strong> of what I initally imagined to be
-                    my world. Through my experiences, I have gained self confidence, the fortitude to overcome challenging obstacles, and a renewed <strong> respect </strong>
-                    and <strong> humility </strong> towards the world.
+                <p>In the past, I had already set my own limits on how far I could go. No, I would never be able to accomplish that, that's for 
+                <strong>smarter people,</strong> or <strong>stronger people.</strong> 
+                But through each journey I take, I learn that I am capable of more than I ever imagined of myself. 
+                I hope that my page can inspire you to <strong>go beyond </strong> what you believe you are capable of!
                 </p>
             </div>
             <div class="current">
-                <button type="button" class="btn btn-outline-primary" @click="scroll">Explore with me</button>
+                <a href="https://www.youtube.com/watch?v=zuchgwZ1Abs">
+                <button type="button" class="btn btn-outline-primary">Checkout My Videos!</button>
+                </a>
             </div>
         </div>
     </div>
@@ -63,7 +66,6 @@
         padding-right: 20%;
         font-size: 1.25rem;
         color: #147ED7;
-        margin: 2%;
     }
 
     .title {
@@ -78,7 +80,7 @@
 
     .para {
         font-family: 'Trebuchet MS';
-        margin: 1%;
+        /* margin: 1%; */
         padding-left: 20%;
         padding-right: 20%;
         font-size: 1.25rem;
