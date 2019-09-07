@@ -24,6 +24,10 @@
 
 <style scoped>
 
+    .page-footer {
+        height: 100%;
+    }
+
     .footer-content {
         background: #058484;
     }

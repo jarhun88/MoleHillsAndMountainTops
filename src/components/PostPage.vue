@@ -1,92 +1,93 @@
 <template>
-    <div class="posts">
-        <div class="card-container">
-            <div class="card">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157710668016766">
-                    <img class="card-img-top" id="hi" src="../images/peru.jpg" alt="Card image cap">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Peru</h5>
-                    <p class="card-description">A Country of Diverse Landscapes and Rich Colonial History</p>
-                    <p class="card-text"><small class="text-muted">08/18/2019 - 09/1/2019</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252661703">
-                    <img class="card-img-top" src="../images/taiwan.jpg" alt="Card image cap">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Taiwan</h5>
-                    <p class="card-description">Birthplace of the Internationally famous Bubble Tea.</p>
-                    <p class="card-text"><small class="text-muted">06/13/2019 - 06/17/2019</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252817771">
-                    <img class="card-img-top" src="../images/singapore.jpg" alt="Card image cap">
-                </a>
 
-                <div class="card-body">
-                    <h5 class="card-title">Singapore</h5>
-                    <p class="card-description">The Impeccably Neat City State of Tomorrow.</p><br>
-                    <p class="card-text"><small class="text-muted">06/12/2019</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252746627">
-                    <img class="card-img-top" src="../images/thailand.jpeg" alt="Card image cap">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Thailand</h5>
-                    <p class="card-description">Home to Vast Beaches and Urban Sprawl.</p><br>
-                    <p class="card-text"><small class="text-muted">06/05/2019 - 06/12/2019</small></p>
-                </div>
-            </div>
-            <div class="card">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253151606">
-                    <img class="card-img-top" src="../images/japan.jpg" alt="Card image cap">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Japan</h5>
-                    <p class="card-description">A Country of Technological Advancement and Ancient Heritage.</p>
-                    <p class="card-text"><small class="text-muted">05/28/2019 - 06/05/2019</small></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771">
-                    <img class="card-img-top" src="../images/korea.jpg" alt="Card image cap">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Korea</h5>
-                    <p class="card-description">Reuniting with my Home Culture.</p><br>
-                    <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771">
-                    <img class="card-img-top" src="../images/sf.jpg" alt="Card image cap">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">USA</h5>
-                    <p class="card-description">The Patriotic Country Which Never Sleeps.</p><br>
-                    <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <a href="https://www.flickr.com/photos/182220016@N07/albums/72157710729795031">
-                    <img class="card-img-top" src="../images/van.jpeg" alt="Card image cap">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Canada</h5>
-                    <p class="card-description">The True North Strong and Free.</p><br>
-                    <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
-                </div>
+    <div class="card-container">
+        <div class="card">
+            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157710668016766">
+                <img class="card-img-top" id="hi" src="../images/peru.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Peru</h5>
+                <p class="card-description">A Country of Diverse Landscapes and Rich Colonial History</p>
+                <p class="card-text"><small class="text-muted">08/18/2019 - 09/1/2019</small></p>
             </div>
         </div>
+        <div class="card">
+            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252661703">
+                <img class="card-img-top" src="../images/taiwan.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Taiwan</h5>
+                <p class="card-description">Birthplace of the Internationally famous Bubble Tea.</p>
+                <p class="card-text"><small class="text-muted">06/13/2019 - 06/17/2019</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252817771">
+                <img class="card-img-top" src="../images/singapore.jpg" alt="Card image cap">
+            </a>
+
+            <div class="card-body">
+                <h5 class="card-title">Singapore</h5>
+                <p class="card-description2" margin-bottom="10px">The Impeccably Pristine City-State of Tomorrow.</p>
+                <p class="card-text"><small class="text-muted">06/12/2019</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252746627">
+                <img class="card-img-top" src="../images/thailand.jpeg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Thailand</h5>
+                <p class="card-description2">Home to Vast Beaches and Urban Sprawl.</p>
+                <p class="card-text"><small class="text-muted">06/05/2019 - 06/12/2019</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253151606">
+                <img class="card-img-top" src="../images/japan.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Japan</h5>
+                <p class="card-description">A Country of Technological Advancement and Ancient Heritage.</p>
+                <p class="card-text"><small class="text-muted">05/28/2019 - 06/05/2019</small></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771">
+                <img class="card-img-top" src="../images/korea.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Korea</h5>
+                <p class="card-description2">Reuniting with my Home Culture.</p>
+                <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709253333771">
+                <img class="card-img-top" src="../images/sf.jpg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">USA</h5>
+                <p class="card-description2">The Patriotic Country Which Never Sleeps.</p>
+                <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="https://www.flickr.com/photos/182220016@N07/albums/72157710729795031">
+                <img class="card-img-top" src="../images/van.jpeg" alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Canada</h5>
+                <p class="card-description2">The True North Strong and Free.</p>
+                <p class="card-text"><small class="text-muted">04/28/2019 - 05/28/2019</small></p>
+            </div>
+        </div>
+
     </div>
+
 </template>
 
 <script>
@@ -107,6 +108,7 @@
     }
 
     .card-container {
+        height: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -166,6 +168,12 @@
         font-size: 1.3rem;
     }
 
+    .card-description2 {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-bottom: 47px;
+    }
+
     a:hover {
         filter: brightness(40%);
     }
@@ -184,7 +192,7 @@
 
     @media screen and (max-width: 600px) {
         .card {
-            width: 400px;
+            width: 95%;
         }
 
         .card-title {
