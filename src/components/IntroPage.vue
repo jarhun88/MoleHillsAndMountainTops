@@ -92,8 +92,8 @@
     }
 
     .profile-pic {
-        height: 200px;
-        width: 200px;
+        height: 225px;
+        width: 225px;
         overflow: hidden;
         border-radius: 50%;
     }
