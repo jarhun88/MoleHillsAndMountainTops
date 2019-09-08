@@ -16,7 +16,7 @@
                 I hope that my page can inspire you to <strong>go beyond </strong> what you believe you are capable of!
                 </p>
             </div>
-            <div class="current">
+            <div class="button-box">
                 <a href="https://www.youtube.com/watch?v=zuchgwZ1Abs">
                 <button type="button" class="btn btn-outline-primary">Checkout My Videos!</button>
                 </a>
@@ -92,8 +92,8 @@
         font-size: 1.25rem;
     }
 
-    .current {
-        margin-top: 5%;
+    .button-box {
+        margin: 5%;
         font-size: 1.25rem;
         font-family: 'Trebuchet MS';
     }
