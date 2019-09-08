@@ -12,7 +12,8 @@
             <div class="para">
                 <p>In the past, I had already set my own limits on how far I could go. No, I would never be able to accomplish that, that's for 
                 <strong>smarter people,</strong> or <strong>stronger people.</strong> 
-                But through each journey I take, I learn that I am capable of more than I ever imagined of myself. 
+                </p>
+                <p>But through each journey I take, I learn that I am capable of more than I ever imagined of myself. 
                 I hope that my page can inspire you to <strong>go beyond </strong> what you believe you are capable of!
                 </p>
             </div>
@@ -57,7 +58,7 @@
     }
 
     .title-box {
-        margin: 5%;
+        margin-top: 5%;
     }
 
     .sub-title {
@@ -80,7 +81,7 @@
 
     .para {
         font-family: 'Trebuchet MS';
-        /* margin: 1%; */
+        margin: 1%;
         padding-left: 20%;
         padding-right: 20%;
         font-size: 1.25rem;
@@ -88,12 +89,13 @@
     }
 
     p {
-        margin: 0px;
+        /* margin-top: 10px; */
         font-size: 1.25rem;
+        /* text-align: left; */
     }
 
     .button-box {
-        margin: 5%;
+        margin: 20px;
         font-size: 1.25rem;
         font-family: 'Trebuchet MS';
     }
