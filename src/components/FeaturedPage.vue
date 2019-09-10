@@ -89,13 +89,12 @@
     }
 
     p {
-        /* margin-top: 10px; */
         font-size: 1.25rem;
-        /* text-align: left; */
     }
 
     .button-box {
         margin: 20px;
+        padding-bottom: 50px;
         font-size: 1.25rem;
         font-family: 'Trebuchet MS';
     }
