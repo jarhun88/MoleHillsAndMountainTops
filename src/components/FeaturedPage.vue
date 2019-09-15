@@ -10,17 +10,26 @@
                 </div>
             </div>
             <div class="para">
-                <p>In the past, I had already set my own limits on how far I could go. No, I would never be able to accomplish that, that's for 
-                <strong>smarter people,</strong> or <strong>stronger people.</strong> 
+                <p>In the past, I had already set my own limits on how far I could go. No, I would never be able to
+                    accomplish that, that's for
+                    <strong>smarter people,</strong> or <strong>stronger people.</strong>
                 </p>
-                <p>But through each journey I take, I learn that I am capable of more than I ever imagined of myself. 
-                I hope that my page can inspire you to <strong>go beyond </strong> what you believe you are capable of!
+                <p>But through each journey I take, I learn that I am capable of more than I ever imagined of myself.
+                    I hope that my page can inspire you to <strong>go beyond </strong> what you believe you are capable
+                    of!
                 </p>
             </div>
-            <div class="button-box">
-                <a href="https://www.youtube.com/watch?v=zuchgwZ1Abs">
-                <button type="button" class="btn btn-outline-primary">Checkout My Videos!</button>
-                </a>
+            <div class="buttons-box">
+                <div class="button-box">
+                    <a href="https://www.youtube.com/watch?v=zuchgwZ1Abs">
+                        <button type="button" class="btn btn-outline-primary">Travel Videos</button>
+                    </a>
+                </div>
+                <div class="button-box">
+                    <a href="https://medium.com/@likisongproduct">
+                        <button type="button" class="btn btn-outline-primary">Hiking Blogs</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -90,6 +99,12 @@
 
     p {
         font-size: 1.25rem;
+    }
+
+    .buttons-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .button-box {
