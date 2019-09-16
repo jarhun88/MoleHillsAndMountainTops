@@ -68,7 +68,6 @@
     p {
         margin: 0px;
         font-size: 1.25rem;
-        /* text-align: left; */
     }
 
     .profile-box {
