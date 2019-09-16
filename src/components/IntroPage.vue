@@ -13,7 +13,7 @@
             </div>
             <div class="para">
                 <p>
-                    My Favourite part of traveling is that I get to observe and experience different people
+                    My favourite part of traveling is that I get to observe and experience different people
                     and their cultures; <strong>beliefs</strong> and <strong>concepts</strong> that I never would have come up with on my own. 
                     I like to think I add a little bit of their culture into myself in order to become a more <strong>well rounded </strong>
                     individual. Plus I love trying new <strong>FOOD.</strong>
