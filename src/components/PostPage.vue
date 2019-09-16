@@ -34,7 +34,7 @@
         </div>
         <div class="card">
             <a href="https://www.flickr.com/photos/182220016@N07/albums/72157709252746627">
-                <img class="card-img-top" src="../images/thailand.jpeg" alt="Card image cap">
+                <img class="card-img-top" src="../images/thailand.jpg" alt="Card image cap">
             </a>
             <div class="card-body">
                 <h5 class="card-title">Thailand</h5>
