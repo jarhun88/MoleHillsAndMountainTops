@@ -21,7 +21,7 @@
             </div>
             <div class="buttons-box">
                 <div class="button-box">
-                    <a href="https://www.youtube.com/playlist?list=PLDGUqX4VZvGvk-e-fn_elGwQWHtd3PTwu&disable_polymer=true">
+                    <a href="https://www.youtube.com/watch?v=isLM2Uj-NRw&list=PLDGUqX4VZvGvk-e-fn_elGwQWHtd3PTwu">
                         <button type="button" class="btn btn-outline-primary">Travel Videos</button>
                     </a>
                 </div>
