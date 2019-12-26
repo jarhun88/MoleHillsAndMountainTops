@@ -1,6 +1,6 @@
 <template>
     <div class="main-page">
-        <Title />
+        <!-- <Title /> -->
         <Map />
         <IntroPage />
         <FeaturedPage />
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-    import Title from "./components/Title.vue";
+    // import Title from "./components/Title.vue";
     import IntroPage from "./components/IntroPage.vue";
     import FeaturedPage from "./components/FeaturedPage.vue";
     import PostPage from "./components/PostPage.vue";
@@ -22,7 +22,7 @@
     export default {
         name: 'MainPage',
         components: {
-            Title,
+            // Title,
             IntroPage,
             FeaturedPage,
             PostPage,

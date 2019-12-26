@@ -1,6 +1,6 @@
 <template>
     <div id="map" class="map">
-        <GmapMap :center="start" :zoom="3" map-type-id="terrain" style="width: 90%; height: 80vh;" 
+        <GmapMap :center="start" :zoom="3" map-type-id="terrain" style="width: 50%; height: 100vh;" 
                  :options="options">
             <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true"
                 :draggable="true" @click="toggleInfoWindow(m,index)" />
@@ -437,6 +437,6 @@
 <style>
     .map {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
 </style>
