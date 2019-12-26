@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid intro-box">
         <div class="profile-box">
-            <img src="../images/me.jpg" class="profile-pic" alt="Picture of John" />
+            <img src= "../images/me.jpg" class="profile-pic" alt="Picture of John" />
         </div>
 
         <div class="text-box">

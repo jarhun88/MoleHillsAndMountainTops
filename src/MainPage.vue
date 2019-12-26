@@ -1,10 +1,12 @@
 <template>
     <div class="main-page">
         <Title />
+        <Map />
         <IntroPage />
         <FeaturedPage />
         <PostPage />
         <Footer />
+
     </div>
 </template>
 
@@ -14,6 +16,7 @@
     import FeaturedPage from "./components/FeaturedPage.vue";
     import PostPage from "./components/PostPage.vue";
     import Footer from "./components/Footer.vue";
+    import Map from "./components/Map.vue";
 
 
     export default {
@@ -24,6 +27,7 @@
             FeaturedPage,
             PostPage,
             Footer,
+            Map
         },
         props: {
         }
