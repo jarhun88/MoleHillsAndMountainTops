@@ -23,17 +23,28 @@
             </div>
             <v-divider class="mx-4"></v-divider>
             <div class="bottom-bar">
-                <div class="photo1-box">
-                    <v-img contain class="image-box" src="../images/peru.jpg" />
-                </div>
-                <div class="brief-box">
-                    <p>Hello my name is John</p>
+                <div class="wrapper-box">
+                    <div class="photo1-box">
+                        <v-carousel :show-arrows="false" height="100%" cycle hide-delimiter-background>
+                            <v-carousel-item contain v-for="(item,i) in items" :key="i" :src="item.src">
+                            </v-carousel-item>
+                        </v-carousel>
+                    </div>
+                    <div class="detail-box">
+                        <div class="button-box">
+                            <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>About Peru</v-btn>
+                        </div>
+                        <div class="button-box">
+                            <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Gallery</v-btn>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="right-box">
             <div class="gmap-box">
-                <GmapMap :center="start" :zoom="3" map-type-id="terrain" style="width: 100%; height: 100%;" :options="options">
+                <GmapMap :center="start" :zoom="3" map-type-id="terrain" style="width: 100%; height: 100%;"
+                    :options="options">
                     <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true"
                         :draggable="true" @click="toggleInfoWindow(m,index)" />
                     <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen"
@@ -61,6 +72,21 @@
 
         data() {
             return {
+                items: [
+                    {
+                        src: require('../images/peru.jpg')
+                    },
+                    {
+                        src: require('../images/taiwan.jpg')
+                    },
+                    {
+                        src: require('../images/singapore.jpg')
+                    },
+                    {
+                        src: require('../images/thailand.jpg')
+                    },
+                ],
+
                 imgUrl: "./assets/logo.png",
                 start: {
                     lat: 10.3157,
@@ -335,22 +361,34 @@
     .bottom-bar {
         height: 70%;
         width: 100%;
-        /* display: flex; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
     }
 
     .photo1-box {
-        /* height: 50%;
-        width: 50%; */
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        max-height: 450px;
+        /* margin: auto; */
     }
 
-    .image-box {
-        max-height: 220px;
-        /* max-width: 300px; */
+    .wrapper-box {
+        width: 100%;
+        height: 100%;
     }
 
     .button-box {
         margin: 1%;
+    }
+
+    .detail-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .travel-box {
@@ -383,41 +421,11 @@
     .sidebar-box {
         width: 15%;
         height: 100%;
+        min-width: 75px;
     }
 
     .fab {
         /* color: white; */
         font-size: 600%;
-    }
-
-    #one {
-        /* background-color: #22A89D; */
-        background-color: #3FB3FC;
-        ;
-    }
-
-    #two {
-        /* background-color: #E65372; */
-        background-color: white;
-    }
-
-    #three {
-        /* background-color: #73B285; */
-        background-color: white;
-    }
-
-    #four {
-        /* background-color: #EC7563; */
-        background-color: #C5C5C5;
-    }
-
-    #five {
-        /* background-color: #B1CB7C; */
-        background-color: #3FB3FC;
-    }
-
-    #six {
-        /* background-color: #EC8E58; */
-        background-color: white;
     }
 </style>
