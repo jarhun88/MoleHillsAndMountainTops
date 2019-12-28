@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import * as VueGoogleMaps from 'vue2-google-maps'
+import vuetify from './plugins/vuetify';
 
 
 Vue.use(VueGoogleMaps, {
@@ -19,12 +20,13 @@ Vue.use(VueGoogleMaps, {
     // v: '3.26',
   }
 })
- 
+
 
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app')

@@ -1,23 +1,63 @@
 <template>
-    <div id="map" class="map">
-        <GmapMap :center="start" :zoom="3" map-type-id="terrain" style="width: 50%; height: 100vh;" 
-                 :options="options">
-            <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true"
-                :draggable="true" @click="toggleInfoWindow(m,index)" />
-            <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen"
-                @closeclick="infoWinOpen=false">
-                <div v-html="infoContent"></div>
-            </gmap-info-window>
-        </GmapMap>
+    <div class="map">
+        <div class="left-box">
+            <div class="top-bar">
+                <div class="button-box">
+                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Korea</v-btn>
+                </div>
+                <div class="button-box">
+                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Japan</v-btn>
+                </div>
+                <div class="button-box">
+                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Peru</v-btn>
+                </div>
+                <div class="button-box">
+                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>SE Asia</v-btn>
+                </div>
+                <div class="button-box">
+                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Hawaii</v-btn>
+                </div>
+                <div class="button-box">
+                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Canada</v-btn>
+                </div>
+            </div>
+            <v-divider class="mx-4"></v-divider>
+            <div class="bottom-bar">
+                <div class="photo1-box">
+                    <v-img contain class="image-box" src="../images/peru.jpg" />
+                </div>
+                <div class="brief-box">
+                    <p>Hello my name is John</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="gmap-box">
+                <GmapMap :center="start" :zoom="3" map-type-id="terrain" style="width: 100%; height: 100%;" :options="options">
+                    <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true"
+                        :draggable="true" @click="toggleInfoWindow(m,index)" />
+                    <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen"
+                        @closeclick="infoWinOpen=false">
+                        <div v-html="infoContent"></div>
+                    </gmap-info-window>
+                </GmapMap>
+            </div>
+            <div class="sidebar-box">
+                <SideBar />
+            </div>
+        </div>
     </div>
 
 </template>
 
 <script>
-
+    import SideBar from './SideBar.vue'
 
     export default {
         name: 'Map',
+        components: {
+            SideBar
+        },
 
         data() {
             return {
@@ -27,170 +67,10 @@
                     lng: 123.8854
                 },
                 options: {
-                    // disableDefaultUI: true,
+                    disableDefaultUI: true,
                     // scrollwheel: false,
-                    minZoom: 3, 
+                    minZoom: 3,
                     maxZoom: 10,
-                    // styles: [
-                    //     {
-                    //         "elementType": "geometry",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#f5f5f5"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "elementType": "labels.icon",
-                    //         "stylers": [
-                    //             {
-                    //                 "visibility": "off"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "elementType": "labels.text.fill",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#616161"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "elementType": "labels.text.stroke",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#f5f5f5"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "administrative.land_parcel",
-                    //         "elementType": "labels.text.fill",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#bdbdbd"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "poi",
-                    //         "elementType": "geometry",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#eeeeee"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "poi",
-                    //         "elementType": "labels.text.fill",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#757575"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "poi.park",
-                    //         "elementType": "geometry",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#e5e5e5"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "poi.park",
-                    //         "elementType": "labels.text.fill",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#9e9e9e"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "road",
-                    //         "elementType": "geometry",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#ffffff"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "road.arterial",
-                    //         "elementType": "labels.text.fill",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#757575"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "road.highway",
-                    //         "elementType": "geometry",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#dadada"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "road.highway",
-                    //         "elementType": "labels.text.fill",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#616161"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "road.local",
-                    //         "elementType": "labels.text.fill",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#9e9e9e"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "transit.line",
-                    //         "elementType": "geometry",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#e5e5e5"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "transit.station",
-                    //         "elementType": "geometry",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#eeeeee"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "water",
-                    //         "elementType": "geometry",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#c9c9c9"
-                    //             }
-                    //         ]
-                    //     },
-                    //     {
-                    //         "featureType": "water",
-                    //         "elementType": "labels.text.fill",
-                    //         "stylers": [
-                    //             {
-                    //                 "color": "#9e9e9e"
-                    //             }
-                    //         ]
-                    //     }
-                    // ]
                 },
                 markers: [{
                     position: {
@@ -436,7 +316,108 @@
 
 <style>
     .map {
+        width: 100%;
+        height: 100%;
         display: flex;
-        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .top-bar {
+        margin-top: 2%;
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-bar {
+        height: 70%;
+        width: 100%;
+        /* display: flex; */
+
+    }
+
+    .photo1-box {
+        /* height: 50%;
+        width: 50%; */
+    }
+
+    .image-box {
+        max-height: 220px;
+        /* max-width: 300px; */
+    }
+
+    .button-box {
+        margin: 1%;
+    }
+
+    .travel-box {
+        height: 33.33%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-box {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .right-box {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .gmap-box {
+        width: 85%;
+        height: 100%;
+    }
+
+    .sidebar-box {
+        width: 15%;
+        height: 100%;
+    }
+
+    .fab {
+        /* color: white; */
+        font-size: 600%;
+    }
+
+    #one {
+        /* background-color: #22A89D; */
+        background-color: #3FB3FC;
+        ;
+    }
+
+    #two {
+        /* background-color: #E65372; */
+        background-color: white;
+    }
+
+    #three {
+        /* background-color: #73B285; */
+        background-color: white;
+    }
+
+    #four {
+        /* background-color: #EC7563; */
+        background-color: #C5C5C5;
+    }
+
+    #five {
+        /* background-color: #B1CB7C; */
+        background-color: #3FB3FC;
+    }
+
+    #six {
+        /* background-color: #EC8E58; */
+        background-color: white;
     }
 </style>

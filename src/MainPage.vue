@@ -2,20 +2,20 @@
     <div class="main-page">
         <!-- <Title /> -->
         <Map />
-        <IntroPage />
+        <!-- <IntroPage />
         <FeaturedPage />
-        <PostPage />
-        <Footer />
+        <PostPage /> -->
+        <!-- <Footer /> -->
 
     </div>
 </template>
 
 <script>
     // import Title from "./components/Title.vue";
-    import IntroPage from "./components/IntroPage.vue";
-    import FeaturedPage from "./components/FeaturedPage.vue";
-    import PostPage from "./components/PostPage.vue";
-    import Footer from "./components/Footer.vue";
+    // import IntroPage from "./components/IntroPage.vue";
+    // import FeaturedPage from "./components/FeaturedPage.vue";
+    // import PostPage from "./components/PostPage.vue";
+    // import Footer from "./components/Footer.vue";
     import Map from "./components/Map.vue";
 
 
@@ -23,10 +23,10 @@
         name: 'MainPage',
         components: {
             // Title,
-            IntroPage,
-            FeaturedPage,
-            PostPage,
-            Footer,
+            // IntroPage,
+            // FeaturedPage,
+            // PostPage,
+            // Footer,
             Map
         },
         props: {
@@ -45,7 +45,12 @@
         font-size: 100%;
     }
 
-    @media screen and (max-width: 375px) {
+    .main-page {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* @media screen and (max-width: 375px) {
         html,
         body {
             font-size: 90%;
@@ -70,5 +75,5 @@
 
     p {
         font-size: 20px;
-    }
+    } */
 </style>
