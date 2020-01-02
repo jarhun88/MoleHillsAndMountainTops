@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import MainPage from './MainPage.vue'
+import MainPage from './components/MainPage.vue'
 export default {
   name: 'app',
   components: {
@@ -23,5 +23,19 @@ export default {
   color: #2c3e50;
   height:100%;
   width: 100%;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-size: 100%;
+}
+
+.main-page {
+    width: 100%;
+    height: 100%;
 }
 </style>

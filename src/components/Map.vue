@@ -1,96 +1,21 @@
 <template>
-    <div class="map">
-        <div class="left-box">
-            <div class="top-bar">
-                <div class="button-box">
-                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Korea</v-btn>
-                </div>
-                <div class="button-box">
-                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Japan</v-btn>
-                </div>
-                <div class="button-box">
-                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Peru</v-btn>
-                </div>
-                <div class="button-box">
-                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>SE Asia</v-btn>
-                </div>
-                <div class="button-box">
-                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Hawaii</v-btn>
-                </div>
-                <div class="button-box">
-                    <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Canada</v-btn>
-                </div>
-            </div>
-            <v-divider class="mx-4"></v-divider>
-            <div class="bottom-bar">
-                <div class="wrapper-box">
-                    <div class="photo1-box">
-                        <v-carousel :show-arrows="false" height="100%" cycle hide-delimiter-background>
-                            <v-carousel-item contain v-for="(item,i) in items" :key="i" :src="item.src">
-                            </v-carousel-item>
-                        </v-carousel>
-                    </div>
-                    <div class="detail-box">
-                        <div class="button-box">
-                            <v-btn v-on:click="show(description)" rounded depressed class="button" width="150px" color=#C5C5C5>About
-                                Peru</v-btn>
-                        </div>
-                        <div class="button-box">
-                            <v-btn href="https://www.flickr.com/photos/182220016@N07/albums/72157710668016766" rounded
-                                depressed class="button" width="150px" color=#C5C5C5>Gallery</v-btn>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <modals-container />
-        </div>
-        <div class="right-box">
-            <div class="gmap-box">
-                <GmapMap :center="start" :zoom="3" map-type-id="terrain" style="width: 100%; height: 100%;"
-                    :options="options">
-                    <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true"
-                        :draggable="true" @click="toggleInfoWindow(m,index)" />
-                    <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen"
-                        @closeclick="infoWinOpen=false">
-                        <div v-html="infoContent"></div>
-                    </gmap-info-window>
-                </GmapMap>
-            </div>
-            <div class="sidebar-box">
-                <SideBar />
-            </div>
-        </div>
-    </div>
-
+    <GmapMap :center="start" :zoom="3" map-type-id="terrain" style="width: 100%; height: 100%;" :options="options">
+        <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true"
+            :draggable="true" @click="toggleInfoWindow(m,index)" />
+        <gmap-info-window :options="infoOptions" :position="infoWindowPos" :opened="infoWinOpen"
+            @closeclick="infoWinOpen=false">
+            <div v-html="infoContent"></div>
+        </gmap-info-window>
+    </GmapMap>
 </template>
 
 <script>
-    import SideBar from './SideBar.vue'
-
     export default {
         name: 'Map',
-        components: {
-            SideBar
+        props: {
         },
-
         data() {
             return {
-                items: [
-                    {
-                        src: require('../images/peru.jpg')
-                    },
-                    {
-                        src: require('../images/taiwan.jpg')
-                    },
-                    {
-                        src: require('../images/singapore.jpg')
-                    },
-                    {
-                        src: require('../images/thailand.jpg')
-                    },
-                ],
-
-                imgUrl: "./assets/logo.png",
                 start: {
                     lat: 10.3157,
                     lng: 123.8854
@@ -299,33 +224,9 @@
                         height: -35
                     }
                 },
-                description: {header: "Peru",
-                              para: "hello"}
             }
         },
         methods: {
-            show(description) {
-                this.$modal.show({
-                    template: `
-                        <div>
-                        <h1>{{ header }}</h1>
-                        <p>{{ para }}</p>
-                        </div>
-                    `,
-                    props: ['header', 'para']
-                }, {
-                    header: description.header,
-                    para: description.para
-                }, {
-                    height: 'auto'
-                }, {
-                    'before-close': () => { console.log('this will be called before the modal closes'); }
-                })
-            },
-            hide() {
-                this.$modal.hide('hello-world');
-            },
-
             getPosition: function (marker) {
                 return {
                     lat: parseFloat(marker.lat),
@@ -364,95 +265,9 @@
             }
         }
     }
-
 </script>
 
-<style>
-    .map {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-    }
+<style scoped>
 
-    .top-bar {
-        margin-top: 2%;
-        height: 20%;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .bottom-bar {
-        height: 70%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-    }
-
-    .photo1-box {
-        height: 80%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        max-height: 450px;
-        /* margin: auto; */
-    }
-
-    .wrapper-box {
-        width: 100%;
-        height: 100%;
-    }
-
-    .button-box {
-        margin: 1%;
-    }
-
-    .detail-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .travel-box {
-        height: 33.33%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .left-box {
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .right-box {
-        width: 50%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .gmap-box {
-        width: 85%;
-        height: 100%;
-    }
-
-    .sidebar-box {
-        width: 15%;
-        height: 100%;
-        min-width: 75px;
-    }
-
-    .fab {
-        /* color: white; */
-        font-size: 600%;
-    }
 </style>
