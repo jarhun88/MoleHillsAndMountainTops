@@ -5,7 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import * as VueGoogleMaps from 'vue2-google-maps'
-import vuetify from './plugins/vuetify';
+import vuetify from '@/plugins/vuetify'
+import VModal from 'vue-js-modal'
+ 
+Vue.use(VModal, { dynamic: true, dynamicDefaults: { clickToClose: false } })
 
 
 Vue.use(VueGoogleMaps, {

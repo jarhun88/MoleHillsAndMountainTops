@@ -1,32 +1,16 @@
 <template>
     <div class="main-page">
-        <!-- <Title /> -->
         <Map />
-        <!-- <IntroPage />
-        <FeaturedPage />
-        <PostPage /> -->
-        <!-- <Footer /> -->
 
     </div>
 </template>
 
 <script>
-    // import Title from "./components/Title.vue";
-    // import IntroPage from "./components/IntroPage.vue";
-    // import FeaturedPage from "./components/FeaturedPage.vue";
-    // import PostPage from "./components/PostPage.vue";
-    // import Footer from "./components/Footer.vue";
     import Map from "./components/Map.vue";
-
 
     export default {
         name: 'MainPage',
         components: {
-            // Title,
-            // IntroPage,
-            // FeaturedPage,
-            // PostPage,
-            // Footer,
             Map
         },
         props: {

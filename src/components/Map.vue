@@ -32,14 +32,17 @@
                     </div>
                     <div class="detail-box">
                         <div class="button-box">
-                            <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>About Peru</v-btn>
+                            <v-btn v-on:click="show(description)" rounded depressed class="button" width="150px" color=#C5C5C5>About
+                                Peru</v-btn>
                         </div>
                         <div class="button-box">
-                            <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Gallery</v-btn>
+                            <v-btn href="https://www.flickr.com/photos/182220016@N07/albums/72157710668016766" rounded
+                                depressed class="button" width="150px" color=#C5C5C5>Gallery</v-btn>
                         </div>
                     </div>
                 </div>
             </div>
+            <modals-container />
         </div>
         <div class="right-box">
             <div class="gmap-box">
@@ -295,10 +298,34 @@
                         width: 0,
                         height: -35
                     }
-                }
+                },
+                description: {header: "Peru",
+                              para: "hello"}
             }
         },
         methods: {
+            show(description) {
+                this.$modal.show({
+                    template: `
+                        <div>
+                        <h1>{{ header }}</h1>
+                        <p>{{ para }}</p>
+                        </div>
+                    `,
+                    props: ['header', 'para']
+                }, {
+                    header: description.header,
+                    para: description.para
+                }, {
+                    height: 'auto'
+                }, {
+                    'before-close': () => { console.log('this will be called before the modal closes'); }
+                })
+            },
+            hide() {
+                this.$modal.hide('hello-world');
+            },
+
             getPosition: function (marker) {
                 return {
                     lat: parseFloat(marker.lat),
