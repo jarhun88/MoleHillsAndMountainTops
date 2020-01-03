@@ -2,22 +2,22 @@
     <div class="showcase">
         <div class="top-bar">
             <div class="button-box">
-                <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Korea</v-btn>
+                <v-btn v-on:click="setActiveTravel(Korea)" rounded depressed class="button" width="150px" color=#C5C5C5>Korea</v-btn>
             </div>
             <div class="button-box">
-                <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Japan</v-btn>
+                <v-btn v-on:click="setActiveTravel(Japan)" rounded depressed class="button" width="150px" color=#C5C5C5>Japan</v-btn>
             </div>
             <div class="button-box">
-                <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Peru</v-btn>
+                <v-btn v-on:click="setActiveTravel(Peru)" rounded depressed class="button" width="150px" color=#C5C5C5>Peru</v-btn>
             </div>
             <div class="button-box">
-                <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>SE Asia</v-btn>
+                <v-btn v-on:click="setActiveTravel(SEAsia)" rounded depressed class="button" width="150px" color=#C5C5C5>SE Asia</v-btn>
             </div>
             <div class="button-box">
-                <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Hawaii</v-btn>
+                <v-btn v-on:click="setActiveTravel(Hawaii)" rounded depressed class="button" width="150px" color=#C5C5C5>Hawaii</v-btn>
             </div>
             <div class="button-box">
-                <v-btn rounded depressed class="button" width="150px" color=#C5C5C5>Canada</v-btn>
+                <v-btn v-on:click="setActiveTravel(Canada)" rounded depressed class="button" width="150px" color=#C5C5C5>Canada</v-btn>
             </div>
         </div>
         <v-divider class="mx-4"></v-divider>
@@ -34,7 +34,7 @@
                         <v-btn v-on:click="show(description)" rounded depressed class="button" width="150px"
                             color=#C5C5C5>
                             About
-                            Peru</v-btn>
+                            {{activeTravel}}</v-btn>
                     </div>
                     <div class="button-box">
                         <v-btn href="https://www.flickr.com/photos/182220016@N07/albums/72157710668016766" rounded
@@ -69,6 +69,15 @@
                         src: require('../images/thailand.jpg')
                     },
                 ],
+
+                activeTravel: this.Korea,
+                Korea: "Korea",
+                Japan: "Japan",
+                Peru: "Peru",
+                SEAsia: "SE Asia",
+                Hawaii: "Hawaii",
+                Canada: "Canada",
+
                 description: {
                     header: "Peru",
                     para: "hello"
@@ -96,6 +105,10 @@
             hide() {
                 this.$modal.hide('hello-world');
             },
+            setActiveTravel(travel) {
+                this.activeTravel = travel
+                console.log(this.activeTravel)
+            }
         }
     }
 </script>
@@ -147,4 +160,5 @@
         flex-direction: row;
         justify-content: center;
     }
+
 </style>
