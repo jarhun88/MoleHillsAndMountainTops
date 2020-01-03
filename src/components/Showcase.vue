@@ -2,22 +2,28 @@
     <div class="showcase">
         <div class="top-bar">
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Korea)" rounded depressed class="button" width="150px" color=#C5C5C5>Korea</v-btn>
+                <v-btn v-on:click="setActiveTravel(Korea, items.Korea)" rounded depressed class="button" width="150px" color=#C5C5C5>
+                    Korea</v-btn>
             </div>
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Japan)" rounded depressed class="button" width="150px" color=#C5C5C5>Japan</v-btn>
+                <v-btn v-on:click="setActiveTravel(Japan, items.Japan)" rounded depressed class="button" width="150px" color=#C5C5C5>
+                    Japan</v-btn>
             </div>
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Peru)" rounded depressed class="button" width="150px" color=#C5C5C5>Peru</v-btn>
+                <v-btn v-on:click="setActiveTravel(Peru, items.Peru)" rounded depressed class="button" width="150px" color=#C5C5C5>
+                    Peru</v-btn>
             </div>
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(SEAsia)" rounded depressed class="button" width="150px" color=#C5C5C5>SE Asia</v-btn>
+                <v-btn v-on:click="setActiveTravel(Thailand, items.Thailand)" rounded depressed class="button" width="150px"
+                    color=#C5C5C5>Thailand</v-btn>
             </div>
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Hawaii)" rounded depressed class="button" width="150px" color=#C5C5C5>Hawaii</v-btn>
+                <v-btn v-on:click="setActiveTravel(Hawaii, items.Hawaii)" rounded depressed class="button" width="150px"
+                    color=#C5C5C5>Hawaii</v-btn>
             </div>
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Canada)" rounded depressed class="button" width="150px" color=#C5C5C5>Canada</v-btn>
+                <v-btn v-on:click="setActiveTravel(Singapore, items.Singapore)" rounded depressed class="button" width="150px"
+                    color=#C5C5C5>Singapore</v-btn>
             </div>
         </div>
         <v-divider class="mx-4"></v-divider>
@@ -25,7 +31,7 @@
             <div class="wrapper-box">
                 <div class="photo1-box">
                     <v-carousel :show-arrows="false" height="100%" cycle hide-delimiter-background>
-                        <v-carousel-item contain v-for="(item,i) in items" :key="i" :src="item.src">
+                        <v-carousel-item contain v-for="(item,i) in activeImages" :key="i" :src="item.src">
                         </v-carousel-item>
                     </v-carousel>
                 </div>
@@ -48,35 +54,114 @@
 </template>
 
 <script>
-    
+
     export default {
         name: 'Showcase',
         props: {
         },
         data() {
             return {
-                items: [
-                    {
-                        src: require('../images/peru.jpg')
-                    },
-                    {
-                        src: require('../images/taiwan.jpg')
-                    },
-                    {
-                        src: require('../images/singapore.jpg')
-                    },
-                    {
-                        src: require('../images/thailand.jpg')
-                    },
+                activeImages: [
+                        {
+                            src: require('../images/korea.jpg')
+                        },
+                        {
+                            src: require('../images/taiwan.jpg')
+                        },
+                        {
+                            src: require('../images/singapore.jpg')
+                        },
+                        {
+                            src: require('../images/thailand.jpg')
+                        },
                 ],
-
+                items: {
+                    Korea: [
+                        {
+                            src: require('../images/korea2.jpg')
+                        },
+                        {
+                            src: require('../images/korea3.jpg')
+                        },
+                    ],
+                    Japan: [
+                        {
+                            src: require('../images/japan.jpg')
+                        },
+                        {
+                            src: require('../images/japan2.jpg')
+                        },
+                        {
+                            src: require('../images/japan3.jpg')
+                        }
+                        
+                    ],
+                    Peru: [
+                        {
+                            src: require('../images/peru.jpg')
+                        },
+                        {
+                            src: require('../images/macchupicchu.jpg')
+                        },
+                        {
+                            src: require('../images/desert.jpg')
+                        },
+                        {
+                            src: require('../images/colcacanyon.jpg')
+                        },
+                        {
+                            src: require('../images/rainbowmountain.jpg')
+                        },
+                        {
+                            src: require('../images/casa.jpg')
+                        }],
+                    Thailand: [
+                        {
+                            src: require('../images/thailand.jpg')
+                        },
+                        {
+                            src: require('../images/thailand1.jpg')
+                        },
+                        {
+                            src: require('../images/thailand4.jpg')
+                        }
+                    ],
+                    Singapore: [
+                        {
+                            src: require('../images/singapore.jpg')
+                        },
+                        {
+                            src: require('../images/singapore1.jpg')
+                        },
+                        {
+                            src: require('../images/singapore2.jpg')
+                        },
+                        {
+                            src: require('../images/singapore3.jpg')
+                        }
+                    ],
+                    Hawaii: [
+                        {
+                            src: require('../images/peru.jpg')
+                        },
+                        {
+                            src: require('../images/taiwan.jpg')
+                        },
+                        {
+                            src: require('../images/singapore.jpg')
+                        },
+                        {
+                            src: require('../images/thailand.jpg')
+                        }
+                    ],    
+                },
                 activeTravel: this.Korea,
                 Korea: "Korea",
                 Japan: "Japan",
                 Peru: "Peru",
-                SEAsia: "SE Asia",
+                Thailand: "Thailand",
                 Hawaii: "Hawaii",
-                Canada: "Canada",
+                Singapore: "Singapore",
 
                 description: {
                     header: "Peru",
@@ -105,16 +190,17 @@
             hide() {
                 this.$modal.hide('hello-world');
             },
-            setActiveTravel(travel) {
+            setActiveTravel(travel, images) {
                 this.activeTravel = travel
+                this.activeImages = images
                 console.log(this.activeTravel)
+                console.log(this.activeImages)
             }
         }
     }
 </script>
 
 <style scoped>
-
     .showcase {
         height: 100%;
         width: 100%;
@@ -160,5 +246,4 @@
         flex-direction: row;
         justify-content: center;
     }
-
 </style>
