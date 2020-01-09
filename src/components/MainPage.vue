@@ -22,8 +22,8 @@
                         class="button" width="150px" color=#C5C5C5>Thailand</v-btn>
                 </div>
                 <div class="button-box">
-                    <v-btn v-on:click="setActiveTravel(Hawaii, items.Hawaii)" rounded depressed class="button"
-                        width="150px" color=#C5C5C5>Hawaii</v-btn>
+                    <v-btn v-on:click="setActiveTravel(Taiwan, items.Taiwan)" rounded depressed class="button"
+                        width="150px" color=#C5C5C5>Taiwan</v-btn>
                 </div>
                 <div class="button-box">
                     <v-btn v-on:click="setActiveTravel(Singapore, items.Singapore, SingaporeLink)" rounded depressed
@@ -57,7 +57,7 @@
         </div>
         <div class="right-box">
             <div class="gmap-box">
-                <Map v-bind:pan="start" v-bind:zoom="zoom"/>
+                <Map v-bind:pan="start" v-bind:zoom="zoom" />
             </div>
             <div class="sidebar-box">
                 <SideBar />
@@ -195,20 +195,26 @@
                             lng: 103.819839
                         }
                     },
-                    Hawaii: [
-                        {
-                            src: require('../images/peru.jpg')
-                        },
-                        {
-                            src: require('../images/taiwan.jpg')
-                        },
-                        {
-                            src: require('../images/singapore.jpg')
-                        },
-                        {
-                            src: require('../images/thailand.jpg')
+                    Taiwan: {
+                        images: [
+                            {
+                                src: require('../images/peru.jpg')
+                            },
+                            {
+                                src: require('../images/taiwan.jpg')
+                            },
+                            {
+                                src: require('../images/singapore.jpg')
+                            },
+                            {
+                                src: require('../images/thailand.jpg')
+                            }
+                        ],
+                        coords: {
+                            lat: 25.032969,
+                            lng: 121.565414
                         }
-                    ]
+                    }
 
                 },
                 activeLink: "https://www.flickr.com/photos/182220016@N07/albums/72157710668016766",
@@ -216,7 +222,7 @@
                 JapanLink: "https://www.flickr.com/photos/182220016@N07/albums/72157709253151606",
                 PeruLink: "https://www.flickr.com/photos/182220016@N07/albums/72157710668016766",
                 ThailandLink: "https://www.flickr.com/photos/182220016@N07/albums/72157709252746627",
-                HawaiiLink: "",
+                TaiwanLink: "https://www.flickr.com/photos/182220016@N07/albums/72157709252661703",
                 SingaporeLink: "https://www.flickr.com/photos/182220016@N07/albums/72157709252817771",
 
                 activeTravel: this.Korea,
@@ -224,7 +230,7 @@
                 Japan: "Japan",
                 Peru: "Peru",
                 Thailand: "Thailand",
-                Hawaii: "Hawaii",
+                Taiwan: "Taiwan",
                 Singapore: "Singapore",
 
                 description: {
@@ -265,6 +271,7 @@
                 this.zoom = 6
                 console.log(this.activeTravel)
                 console.log(this.activeImages)
+                console.log(this.zoom)
             }
         }
     }
