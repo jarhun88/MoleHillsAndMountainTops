@@ -2,19 +2,19 @@
     <div class="showcase">
         <div class="top-bar">
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Korea, items.Korea)" rounded depressed class="button" width="150px" color=#C5C5C5>
+                <v-btn v-on:click="setActiveTravel(Korea, items.Korea, KoreaLink)" rounded depressed class="button" width="150px" color=#C5C5C5>
                     Korea</v-btn>
             </div>
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Japan, items.Japan)" rounded depressed class="button" width="150px" color=#C5C5C5>
+                <v-btn v-on:click="setActiveTravel(Japan, items.Japan, JapanLink)" rounded depressed class="button" width="150px" color=#C5C5C5>
                     Japan</v-btn>
             </div>
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Peru, items.Peru)" rounded depressed class="button" width="150px" color=#C5C5C5>
+                <v-btn v-on:click="setActiveTravel(Peru, items.Peru, PeruLink)" rounded depressed class="button" width="150px" color=#C5C5C5>
                     Peru</v-btn>
             </div>
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Thailand, items.Thailand)" rounded depressed class="button" width="150px"
+                <v-btn v-on:click="setActiveTravel(Thailand, items.Thailand, ThailandLink)" rounded depressed class="button" width="150px"
                     color=#C5C5C5>Thailand</v-btn>
             </div>
             <div class="button-box">
@@ -22,7 +22,7 @@
                     color=#C5C5C5>Hawaii</v-btn>
             </div>
             <div class="button-box">
-                <v-btn v-on:click="setActiveTravel(Singapore, items.Singapore)" rounded depressed class="button" width="150px"
+                <v-btn v-on:click="setActiveTravel(Singapore, items.Singapore, SingaporeLink)" rounded depressed class="button" width="150px"
                     color=#C5C5C5>Singapore</v-btn>
             </div>
         </div>
@@ -43,7 +43,7 @@
                             {{activeTravel}}</v-btn>
                     </div>
                     <div class="button-box">
-                        <v-btn href="https://www.flickr.com/photos/182220016@N07/albums/72157710668016766" rounded
+                        <v-btn v-bind:href = "activeLink" rounded
                             depressed class="button" width="150px" color=#C5C5C5>Gallery</v-btn>
                     </div>
                 </div>
@@ -114,7 +114,8 @@
                         },
                         {
                             src: require('../images/casa.jpg')
-                        }],
+                        }
+                    ],
                     Thailand: [
                         {
                             src: require('../images/thailand.jpg')
@@ -155,6 +156,13 @@
                         }
                     ],    
                 },
+                activeLink: "https://www.flickr.com/photos/182220016@N07/albums/72157710668016766",
+                KoreaLink:"https://www.flickr.com/photos/182220016@N07/albums/72157709253333771",
+                JapanLink: "https://www.flickr.com/photos/182220016@N07/albums/72157709253151606",
+                PeruLink: "https://www.flickr.com/photos/182220016@N07/albums/72157710668016766",
+                ThailandLink: "https://www.flickr.com/photos/182220016@N07/albums/72157709252746627",
+                HawaiiLink: "",
+                SingaporeLink: "https://www.flickr.com/photos/182220016@N07/albums/72157709252817771",
                 activeTravel: this.Korea,
                 Korea: "Korea",
                 Japan: "Japan",
@@ -170,6 +178,7 @@
             }
         },
         methods: {
+
             show(description) {
                 this.$modal.show({
                     template: `
@@ -187,12 +196,15 @@
                     'before-close': () => { console.log('this will be called before the modal closes'); }
                 })
             },
+
             hide() {
                 this.$modal.hide('hello-world');
             },
-            setActiveTravel(travel, images) {
+
+            setActiveTravel(travel, images, link) {
                 this.activeTravel = travel
                 this.activeImages = images
+                this.activeLink = link
                 console.log(this.activeTravel)
                 console.log(this.activeImages)
             }
@@ -246,4 +258,5 @@
         flex-direction: row;
         justify-content: center;
     }
+
 </style>

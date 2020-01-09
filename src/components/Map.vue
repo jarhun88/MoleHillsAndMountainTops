@@ -26,7 +26,8 @@
                     minZoom: 3,
                     maxZoom: 10,
                 },
-                markers: [{
+                markers: [
+                {
                     position: {
                         name: "Abbotsford",
                         description: "description 1",
